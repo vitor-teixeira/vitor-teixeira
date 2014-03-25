@@ -1,0 +1,44 @@
+.introduction{    
+    .vitor-teixeira-img{
+        @include vendor(border-radius, 100%);
+        border: double 4pt $brand-color-comp;
+    }
+    .name{
+        font-weight:600;
+    }
+
+    .personal-info{
+        @extend .grid;
+        text-align: center;
+    }
+
+    .personal-picture{
+        @extend .grid__item;
+        @extend .desk-one-fifth, lap-one-tenth;
+        text-align: center;
+    }
+
+    .personal-details{
+        @extend .grid__item;
+        @extend .desk-one-quarter, lap-one-half;     
+        padding-top: 2em;
+        text-align: left;
+    }
+
+    .about-me {
+        @extend .grid__item;
+        @extend .desk-one-half;   
+        padding-top: 2em;
+        text-align: left;
+    }
+    
+    .interests p{
+        display: inline;
+        padding-right: 2em;
+    }
+    
+    @include media-query(lap){
+   
+} 
+
+}

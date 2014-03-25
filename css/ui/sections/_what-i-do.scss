@@ -1,0 +1,14 @@
+.resume{
+    background-color:$brand-color-comp;
+    
+    
+    .experience-and-skills{
+        @extend .grid;
+    }
+    
+    .experience-container, .skills-container{
+        @extend .grid__item;
+        @extend .desk-one-half;        
+        text-align:center;
+    }
+}
