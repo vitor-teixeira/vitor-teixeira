@@ -3352,11 +3352,19 @@ label,
   position: relative;
 }
 .welcome nav {
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
+  z-index: 999999;
+}
+.welcome nav ul {
+  padding: 0.5em;
+  margin: 0;
   background-color: #01a68a;
+}
+.welcome nav li {
+  vertical-align: middle;
 }
 .welcome nav li a {
   color: #fff;
@@ -3444,6 +3452,14 @@ a:hover {
   }
   .welcome nav ul > li > a, footer nav ul > li > a {
     display: block;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .welcome nav ul li:first-of-type a, footer nav ul li:first-of-type a {
+    border-top: none;
+  }
+  .welcome nav ul li:last-of-type a, footer nav ul li:last-of-type a {
+    border-bottom: none;
   }
 }
 

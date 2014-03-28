@@ -1,73 +1,161 @@
-/*
- * - autoSmoothScroll -
- * Licence MIT
- * Written by Gabriel Delépine
- * Current version  1.2 (2014-02-13)
- * Previous version 1.0.1 (2013-11-08)
- * Previous version 1.0 (2013-10-27)
- * Requirement : No one, it is a framework-free fonction (ie : You do not need to include any other file in your page such as jQuery)
- * Fork-me in github : 
- * */
-(function(window, undefined) // Code in a function to create an isolate scope
-{
-    'use strict';
-    var height_fixed_header = 0, // For layout with header with position:fixed. Write here the height of your header for your anchor don't be hiden behind
-        speed = 500,
-        moving_frequency = 15, // Affects performance ! High number makes scroll more smooth
-        links = document.getElementsByTagName('a'),
-        href;
-    
-    for(var i=0; i<links.length; i++)
-    {
-        href = (links[i].attributes.href === undefined) ? null : links[i].attributes.href.nodeValue.toString();
-        if(href !== null && href.length > 1 && href.indexOf('#') != -1) // href.substr(0, 1) == '#'
-        {
-            links[i].onclick = function()
-            {
-                var element,
-                    href = this.attributes.href.nodeValue.toString(),
-                    url = href.substr(0, href.indexOf('#')),
-                    id = href.substr(href.indexOf('#')+1);
-                if(element = document.getElementById(id))
-                {
-                    
-                    var hop_count = (speed - (speed % moving_frequency)) / moving_frequency, // Always make an integer
-                        getScrollTopDocumentAtBegin = getScrollTopDocument(),
-                        gap = (getScrollTopElement(element) - getScrollTopDocumentAtBegin) / hop_count;
-                    
-                    if(window.history && typeof window.history.pushState == 'function')
-                        window.history.pushState({}, undefined, url+'#'+id);// Change URL for modern browser
-                    
-                    for(var i = 1; i <= hop_count; i++)
-                    {
-                        (function()
-                        {
-                            var hop_top_position = gap*i;
-                            setTimeout(function(){  window.scrollTo(0, hop_top_position + getScrollTopDocumentAtBegin); }, moving_frequency*i);
-                        })();
+/*--------------------------------------------------------------------------
+ *  Smooth Scroller Script, version 1.0.1
+ *  (c) 2007 Dezinerfolio Inc. <midart@gmail.com>
+ *  Edited by @floorish
+ *
+ *  For details, please check the website : http://dezinerfolio.com/
+ *
+  --------------------------------------------------------------------------*/
+
+Scroller = {
+	// control the speed of the scroller.
+	// dont change it here directly, please use Scroller.speed=50;
+	speed:10,
+
+	// returns the Y position of the div
+	gy: function (elem) {
+		var y = elem.offsetTop;
+		if (elem.offsetParent) {
+            while (elem = elem.offsetParent) {
+                y += elem.offsetTop;
+            }
+        }
+		return y;
+	},
+
+	// returns the current scroll position
+	scrollTop: function () {
+		var body = document.body;
+        var d = document.documentElement;
+        if (body && body.scrollTop) return body.scrollTop;
+        if (d && d.scrollTop) return d.scrollTop;
+        if (window.pageYOffset) return window.pageYOffset;
+        return 0;
+	},
+
+	// attach an event for an element
+	add: function(elem, type, func) {
+        if (elem.addEventListener) return elem.addEventListener(type, func, false);
+        if (elem.attachEvent) return elem.attachEvent('on'+type, func);
+	},
+
+	// kill an event of an element
+	end: function(e) {
+        if (window.event) {
+            window.event.cancelBubble = true;
+            window.event.returnValue = false;
+            return;
+        }
+        if (e.preventDefault && e.stopPropagation) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+	},
+
+	// move the viewport to the desired position
+	scroll: function(targetPos) {
+
+    //Change this to 0 if no Header height is defined
+    var fixedHeaderHeight = 63;
+
+    //Take a fixed header height into account
+    var targetPos = targetPos-fixedHeaderHeight;
+
+        // viewport height
+		var viewHeight = window.innerHeight || document.documentElement.clientHeight;
+
+        // total page height
+		var pageHeight = document.body.scrollHeight;
+
+        // current scroll position
+		var currentPos = Scroller.scrollTop();
+
+        // can't scroll beyond pageHeight: set target to lowest possible
+        if( pageHeight - targetPos < viewHeight ) {
+            targetPos = pageHeight - viewHeight;
+        }
+
+        // check if target is below current position
+		if(targetPos > currentPos) {
+            currentPos += Math.ceil( (targetPos - currentPos)/Scroller.speed );
+        } else {
+			currentPos += ( targetPos - currentPos)/Scroller.speed;
+        }
+
+        // scroll to new position
+		window.scrollTo(0, currentPos);
+
+        // stop if the destination is reached, or this iteration scrolled nothing
+        if(currentPos == targetPos || Scroller.previousPos == currentPos) {
+            clearInterval(Scroller.interval);
+        }
+
+        Scroller.previousPos = currentPos;
+	},
+
+	// initializer that adds the renderer to the onload function of the window
+	init: function() {
+		Scroller.add(window, 'load', Scroller.render);
+	},
+
+	// this method extracts all the anchors and validates then as # and attaches the events.
+    render: function() {
+
+        Scroller.end(this);
+
+        var anchors = document.getElementsByTagName('a');
+
+        for ( var i = 0; i < anchors.length; i++ ) {
+            var anchor = anchors[i];
+
+            // check if anchor links to something in current page
+            if( anchor.href && anchor.href.indexOf('#') != -1 &&
+                    anchor.href.indexOf('#') != anchor.href.length-1 &&
+                    ((anchor.pathname == location.pathname) || ('/'+anchor.pathname == location.pathname)) ) {
+
+                // add event listener
+                Scroller.add(anchor, 'click',
+                    function() {
+                        Scroller.end(this);
+
+                        var target = this.hash.substr(1);
+                        var targetElem = document.getElementById(target);
+
+                        // check if target exists
+                        if( ! targetElem) {
+
+                            // check all anchors on the page for matching name attribute
+                            for ( var j=0; j < anchors.length; j++) {
+
+                                if( anchors[j].name == target ) {
+                                    targetElem = anchors[j];
+
+                                    // don't search further
+                                    break;
+                                }
+
+                            }
+
+                        }
+
+                        // scroll to target if it exists
+                        if ( targetElem ) {
+                            clearInterval(Scroller.interval);
+
+                            Scroller.interval = setInterval(function(){
+                                Scroller.scroll(Scroller.gy(targetElem));
+                            }, 10);
+                        }
+
                     }
-                    
-                    return false;
-                }
-            };
+
+                );
+
+
+            }
         }
     }
-    
-    var getScrollTopElement =  function(e)
-    {
-        var top = height_fixed_header * -1;
+};
 
-        while (e.offsetParent != undefined && e.offsetParent != null)
-        {
-            top += e.offsetTop + (e.clientTop != null ? e.clientTop : 0);
-            e = e.offsetParent;
-        }
-        
-        return top;
-    };
-    
-    var getScrollTopDocument = function()
-    {
-        return document.documentElement.scrollTop !== undefined ? document.documentElement.scrollTop : document.body.scrollTop;
-    };
-})(window);
+// invoke the initializer of the scroller
+Scroller.init();
