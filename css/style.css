@@ -93,6 +93,11 @@ button:focus i.icon{
     color: #333;
 }
 
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
 /*-
 Personal Icon Font Stuff
 */
@@ -370,9 +375,11 @@ textarea {
     margin-bottom: 2em;
 }
 
-.hidden {
-display: none !important;
-visibility: hidden !important;
+#thank-you-message{
+    padding: 1em 3em 1em 1em;
+    background: rgba(74,155,23,.25);
+    color: #38621d;
+
 }
 
 #contact hr {
@@ -499,7 +506,7 @@ RESPONSIVENESS
         float:left;
 
     }
-    
+
     .presenting-myself .presentation-lead{
         margin: 0;
     }
