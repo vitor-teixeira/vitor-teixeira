@@ -1,0 +1,561 @@
+/*	Author: VÍTOR TEIXEIRA (http://vitorteixeira.me/)
+Copyright:	(c) 2014 Vítor Teixeira. Some rights reserved.
+*/
+
+
+/*-
+BASE STYLES
+*/
+
+body {
+    background: #01a68a;
+    color: #484640;
+    -moz-transition: font-size 0.2s linear;
+    -o-transition: font-size 0.2s linear;
+    -ms-transition: font-size 0.2s linear;
+    -webkit-transition: font-size 0.2s linear;
+    transition: font-size 0.2s linear;
+    font: normal 100% lato, sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+a {
+    color: #01a68a;
+    text-decoration: underline;
+    -moz-transition: color 0.2s linear;
+    -o-transition: color 0.2s linear;
+    -ms-transition: color 0.2s linear;
+    -webkit-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+    line-height: 1.5em;
+}
+
+a:hover,
+a:focus {
+    color:#484640;
+    text-decoration: underline;
+}
+
+ul{
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+em{
+    font-weight: 400;
+}
+
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #01a68a;
+}
+
+h2{
+    font-weight: 400;
+    color: #01a68a;
+    border-bottom: 3px solid rgb(204,204,204);
+}
+
+button{
+    background: #01a68a;
+    color: whitesmoke;
+    border:2px solid #01a68a;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: all .5s;
+    line-height: 1;
+    padding: 0.5em;
+}
+
+button i.icon{
+    color: whitesmoke;
+    transition: all .5s;
+}
+
+button:hover, 
+button:focus{
+    background:whitesmoke;
+    border: 2px solid #01a68a;
+    color: #333;
+}
+
+button:hover i.icon, 
+button:focus i.icon{
+    color: #333;
+}
+
+/*-
+Personal Icon Font Stuff
+*/
+
+@font-face {
+    font-family: "vt-icons";
+    src:url("../fonts/vt-icons.eot");
+    src:url("../fonts/");
+    src:url("../fonts/vt-icons.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/vt-icons.woff") format("woff"),
+        url("../fonts/vt-icons.ttf") format("truetype"),
+        url("../fonts/vt-icons.svg#vt-icons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="vticon-"]:before,
+[class*=" vticon-"]:before {
+    font-family: "vt-icons";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon svg{
+    fill:#000
+}
+.icon{
+    margin:0;
+    margin-right:10px;
+    color:#162a36;
+    overflow:hidden;
+    font-size:1.5em;
+}
+
+.vticon-user:before {
+    content: "a";
+}
+.vticon-location:before {
+    content: "b";
+}
+.vticon-address-book:before {
+    content: "c";
+}
+.vticon-file:before {
+    content: "d";
+}
+.vticon-package:before {
+    content: "e";
+}
+.vticon-briefcase:before {
+    content: "f";
+}
+.vticon-linkedin:before {
+    content: "g";
+}
+.vticon-envelope:before {
+    content: "h";
+}
+.vticon-sire:before {
+    content: "i";
+}
+.vticon-slideshare:before {
+    content: "j";
+}
+.vticon-twitter:before {
+    content: "k";
+}
+.vticon-github:before {
+    content: "l";
+}
+.vticon-google-plus:before {
+    content: "m";
+}
+.vticon-pinterest:before {
+    content: "n";
+}
+.vticon-smile:before {
+    content: "o";
+}
+.vticon-user-centered:before {
+    content: "p";
+}
+.vticon-arrow-right:before {
+    content: "q";
+}
+
+/*-
+Mobile-First Layout Styles
+*/
+.page {
+    margin: 0 auto;
+    max-width: 800px;
+    width: auto;
+}
+section{
+    text-align: center;
+}
+
+section{
+    padding: 2em;
+}
+
+/*-
+HEADER
+*/
+
+header{
+    min-height: 200px;
+    text-align: center;
+}
+
+
+header nav {
+    width: 100%;
+}
+
+header nav li {
+    margin: 0;
+    display: block;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+}
+
+header nav a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 300;
+    text-decoration: none;
+}	
+
+header nav a:hover,
+header nav a:focus
+{
+    color: whitesmoke;
+}
+
+img.long-logo{
+    padding: 2em 0 2em 0;
+    width: 550px;
+}
+
+/*-
+Section HELLO
+*/
+section#hello{
+    background: whitesmoke;
+}
+
+#hello img.my-pic{
+    border: 4px double #484640;
+    border-radius: 100%;
+}
+
+#hello p.name{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+#hello .presenting-myself{
+    line-height: 2;
+}
+
+.presenting-myself .presentation-lead{
+    font-size: 1.5em;
+}
+
+#hello a{
+    border-bottom: 2px solid #01a68a;
+    transition: all .3s;
+    text-decoration: none;
+}
+
+#hello a:hover,
+#hello a:focus
+{
+    color:#484640;
+    border-bottom: 2px solid #484640;
+    text-decoration: none;
+}
+
+
+/*-
+Section TOUGHTS
+*/
+section#blog{
+    background: #ebebeb;
+}
+
+/*-
+Section WHAT I DO
+*/
+section#what-i-do{
+    background: whitesmoke;
+    min-height: 200px;
+}
+
+.experience-education .job,
+.experience-education .course{
+    margin-bottom: 2em;
+}
+
+.job .job-title,
+.course .course-title{
+    font-weight: 600;
+    margin: 0;
+}
+
+.job .job-dates,
+.course .course-dates{
+    color: #484640;
+    font-weight: 200;
+    margin: 0;
+}
+
+.job .job-description,
+.course .course-description{
+    margin:0.5em 0 0;
+}
+
+
+/*-
+Section CONTACT ME
+*/
+section#contact{
+    background: #ebebeb;
+    min-height: 200px;
+}
+
+input,
+textarea {
+    border: 2px solid #fff;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+input:focus,
+textarea:focus {
+    background: whitesmoke;
+    color: #444;
+    border: 2px solid #01a68a;
+    box-shadow: none;
+    outline: none;
+}
+input {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    width: 97%;
+}
+textarea {
+    padding: 0.45em;
+    width: 97%;
+    resize:vertical;
+}
+
+#contact .contact-form label{
+    display: block;
+    text-align: left;
+}
+
+.contact-form .required-mark{
+    color: #01a68a;
+}
+
+.contact-form .contact-message{
+    margin-bottom: 2em;
+}
+
+.hidden {
+display: none !important;
+visibility: hidden !important;
+}
+
+#contact hr {
+    border:0;
+    height: 0;
+    border-bottom: 3px solid rgb(204,204,204);
+}
+
+#contact .social-contacts a{
+    text-decoration: none;
+}
+
+#contact .social-contacts{
+    margin-top: 2em;
+}
+
+#contact .social-contacts a i{
+    color: #01a68a;
+    font-size: 4em; 
+    transition: all .3s;
+
+}
+
+#contact .social-contacts a:hover i,
+#contact .social-contacts a:focus i{
+    color: #484640;
+}
+
+
+
+/*-
+FOOTER
+*/
+
+footer {
+    color: whitesmoke;
+    padding: 2em;
+    text-align: center;
+}
+footer p {
+    padding: 1em 0;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+}
+
+
+/*-
+RESPONSIVENESS
+*/
+
+/* Small screen! */
+@media screen and (max-device-width: 480px),
+    screen and (max-width: 600px) {
+        /* iOS and Windows Phone font-size changes */
+        html {
+            -ms-text-size-adjust: none;
+            -webkit-text-size-adjust: none;
+        }
+
+        img.long-logo{
+            max-width: 80%;
+            padding-bottom: 1em;
+        }
+    }
+
+/* Scaling up! */
+@media screen and (min-width: 768px) {
+    body{
+        font-size: 1.2em;
+    }
+
+    .page {
+        max-width: none;
+    }
+    header nav {
+        width: auto;
+    }
+
+    header nav li {
+        display: inline;
+        margin-left: 15px;
+        background: none;
+        vertical-align: middle;
+    }
+
+    header nav li:first-child{
+        margin-left: 0; 
+    }
+
+    header nav a{
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+}
+/* Desktop Sizes! */
+@media screen and (min-width: 860px) {
+    .container{
+        width: 100%;   
+        overflow: hidden;
+    }
+
+    #hello{
+        text-align: left;
+    }
+
+    #hello .my-pic{
+        width: 18.1818182%;
+        margin-right: 3.0833333%;
+        margin-bottom: 2em;
+        float:left;
+        min-height: 1px;
+    }
+
+    #hello .my-info{
+        width: 26.8181818%;
+        margin-right: 4.3636364%;
+        float: left;
+    }
+
+    #hello .presenting-myself{
+        width:46.4545455%;
+        float:left;
+
+    }
+    
+    .presenting-myself .presentation-lead{
+        margin: 0;
+    }
+
+    section button{
+        clear: both;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    #what-i-do .experience-education{
+        width: 55%;
+        margin-right: 13.9090909%;
+        float: left;
+        text-align: left;
+    }
+
+    #what-i-do .skills{
+        width: 29.0909091%;
+        float:left;
+        text-align: left;
+    }
+
+
+    #contact .contact-form{
+        text-align: left;
+    }
+
+    .contact-form .contact-details{
+        float: left;
+        width: 45%;
+        margin-right: 5%;
+    }
+
+    .contact-form .contact-message{
+        float: left;
+        width: 49%;
+        margin-right: 0;
+    }
+
+    .contact-form .contact-message textarea{
+        height: 11.15em;
+    }
+
+    #contact button{
+        margin-right: 0;
+    }
+
+}
+
+/* IT'S OVER 9000! */
+@media screen and (min-width: 1200px) {
+
+    section .container{
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+}

@@ -1,166 +1,174 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
-  <title>V&iacute;tor Teixeira</title>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/vitor-teixeira.css">
-  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="shortcut icon" href=icon.png>
-  <link rel=apple-touch-icon-precomposed href=icon.png>
-  <meta name=apple-mobile-web-app-title content="inuitcss">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="Keywords" content="">
+        <title>Digital Home of V&iacute;tor Teixeira</title>
+        <link rel="shortcut icon" href=icon.png>
+        <link rel=apple-touch-icon-precomposed href=icon.png>
+        <meta name=apple-mobile-web-app-title content="Vítor Teixeira">
 
-  <header class="welcome">
-    <!--
-    <img src="img/vitorteixeira_logo.png" alt="Welcome to Vítor Teixeira's website" class="logo"></img>
-  -->
-  <nav role="navigation" class="nav-collapse">
-    <ul>
-      <li><a href="#hello"
-        title="About me">About me</a></li>         <li><a href="#what-i-do"
-          title="What I do">What I do</a></li>         <li><a href="#contact"
-            title="Contact me">Contact me</a></li>     </ul> </nav>
-          </header>
+        <!-- Everything CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
 
-          <main role="main">
-            <section id="hello" class="introduction">
-              <div class="content-container">
-                <h1>Hello.</h1>
+        <!-- JS Stuff -->
+        <script src="http://use.edgefonts.net/lato:n9,i4,n1,i7,i9,n7,i1,i3,n4,n3:all.js"></script> <!--TODO: Ask only for the required weights -->
 
-                <div class="personal-info">
-                  <div class="personal-picture">
-                    <img src="img/vitorteixeira.jpg" alt="This is me" class="vitor-teixeira-img"></img>
-                  </div>
-                  <div class="personal-details">
+        <script type="text/javascript">
+            window.onload = (function(){
+                if(window.location.hash == '#thank-you-message'){
+                    document.getElementById('thank-you-message').className = 'none';
+                }
+            })
+        </script>
+    </head>
+    <body>
+        <div class="page">
+            <header role="banner">
+                <img src="img/long-logo-white.png" alt="Welcome to Vítor Teixeira's website" class="long-logo">
 
+                <nav role="navigation">
+                    <ul>
+                        <!--                        <li><a href="#"><img src="img/short-logo-white.png" alt="" class="short-logo"></a></li>-->
+                        <li><a href="#hello">About Me</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#what-i-do">What I Do</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-                    <p class="name"><i class="fa fa-user fa-lg"></i> Vítor Teixeira</p>
-                    <p><i class="fa fa-briefcase fa-lg"></i> User Experience Designer</p>
-                    <p><i class="fa fa-map-marker fa-lg"></i> Lisbon, Portugal</p>
-                  </div><!--
+            <main role="main">
+                <section id="hello">
+                    <div class="container">
+                        <h1>Hello.</h1>
+                        <img src="img/vitorteixeira.jpg" alt="It's actually a picture of me" class="my-pic">
+                        <div class="my-info">
+                            <p class="name">Vítor Teixeira</p>
+                            <p><i class="icon vticon-briefcase"></i>User Experience Designer</p>
+                            <i class="icon vticon-location"></i><a href="https://goo.gl/maps/n602z" target="_blank">Lisbon, Portugal</a>
+                        </div>
+                        <div class="presenting-myself">
+                            <p class="presentation-lead">Welcome to my site. I’m V&iacute;tor and I love everything about <em>Usability</em>.</p>
+                            <p>I also love <em>Reading</em>,  going to the <em>Movies</em> and <em>Repurposing</em> old stuff. Oh, and I’m also crazy about <em>Dogs</em>.</p>
+                        </div>
 
-                  --><div class="about-me">
-                  <p>Hey! Welcome to my site. I’m Vítor and I love fixing stuff and talking to people about usability.</p>
+                        <!--                        <button>Add my vcsrd to your contacts</button>-->
+                    </div>
+                </section> <!-- End of Hello section-->
 
-                  <div class="interests">
-                    <p>I also love:</p>
-                    <p><i class="fa fa-book"></i> Books</p>
-                    <p><i class="fa fa-film"></i> Cinema</p>
-                    <p><i class="fa fa-cogs"></i> Do-it-yourself</p>
-                  </div>
+                <section id="blog">
+                    <div class="container">
 
+                        <h1>Writings and Talks.</h1>
 
-                </div>
-              </div>
+                        <button>More posts ></button>
+                    </div>
+                </section> <!-- End of Thoughts section-->
 
+                <section id="what-i-do">
+                    <div class="container">
 
-              <div class="action-button-container">
-                <button class="virtual-card primary-btn"><i class="fa fa-users fa-lg"></i> Add me to your contacts</button>
-              </div>
-            </div>
-          </section><!--end of section.hello-->
+                        <h1>What I do.</h1>
 
-          <section id="what-i-do" class="resume">
-            <div class="content-container">
-              <h1>What I do.</h1>
-              <div class="experience-and-skills">
-                <div class="experience-container">
-                  <h2>Experience &amp; Education</h2>
+                        <div class="experience-education">
+                            <h2>Experience</h2>
 
+                            <div class="job">
+                                <p class="job-title">SAPO (Portugal Telecom) // UX Designer</p>
+                                <p class="job-dates">2013 - TODAY</p>
+                                <p class="job-description">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+                            </div>
 
+                            <div class="job">
+                                <p class="job-title">Microsoft Language Development Center // Researcher</p>
+                                <p class="job-dates">2011 - 2013</p>
+                                <p class="job-description">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+                            </div>
 
-                  <ul class='timeline v2'>
-                    <li class="year">2014</li>
-                    <li class='event offset-first'>
-                      2013
-                      <p>Usability &amp; Quality Assurance</p>
-                      <p class="company">SAPO, Portugal Telecom</p>
-                      <a href="http://www.sapo.pt/" title="SAPO Portal"><img src="img/logo_sapo.png" alt="SAPO Portal"></a>
-                    </li>
-                    <li class='event'>
-                      2011 - 2013
-                      <p>Software Development Engineer</p>
-                      <p class="company">Microsoft Language Development Center</p>
-                      <a href="http://www.microsoft.com/pt-pt/mldc/default.aspx" title="Microsoft Language Development Center"><img src="img/logo_msftdevcenter.png" alt="Microsoft Language Development Center"></a>
-                    </li>
+                            <div class="job">
+                                <p class="job-title">Optimus (Sonaecom) // Customer Care and Technical Support</p>
+                                <p class="job-dates">2006 - 2010</p>
+                                <p class="job-description">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+                            </div>
 
-                    <li class="event">
-                      2009 - 2011
-                      <p>MSc. in Telecommunications and Computer Science</p>
-                      <p class="company">ISCTE - University Institute of Lisbon</p>
-                      <a href="http://www.iscte-iul.pt/en/home.aspx" title="ISCTE Lisbon University Institute"><img src="img/logo-iscte.png" alt="ISCTE-IUL"></a>
-                    </br>
-                    <a href="http://download.microsoft.com/download/A/0/B/A0B1A66A-5EBF-4CF3-9453-4B13BB027F1F/Improving_elderly_access_to_social_media_using_a_MMUI_Vitor_Teixeira.pdf" title="Vítor Teixeira MSc thesis">Download my thesis (3.8MB)</a>
-                  </li>
-                  <li class="event">
-                    2006 - 2010
-                    Customer Care and Technical Support
-                    <p class="company">Optimus, Sonaecom</p>
-                    <a href="http://www.zonoptimus.pt/institucional/EN/Pages/Home.aspx" title="Optimus Sonaecom"><img src="img/optimus.png" alt="Optimus Sonaecom"></a>
-                  </li>
-                  <li class="year">2006</li>
+                            <h2>Education</h2>
 
-                </ul>
-              </div><!--
+                            <div class="course">
+                                <p class="course-title">ISCTE-IUL // MSc. Telecommunications and Computer Science
+                                </p>
+                                <p class="course-dates">2009 - 2011</p>
+                                <p class="course-description">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+                            </div>
+                        </div>
 
-              --><div class="skills-container">
-              <h2>Main Skills</h2>
-              <p>Wireframing </p>
-              <p>Information Architecture</p>
-              <p>Interaction Design</p>
-              <p>Heuristic Evaluation</p>
-              <p>User Testing</p>
-              <p>Usability Testing</p>
-              <p>HTML</p>
-              <p>CSS </p>
-            </div>
-          </div>
+                        <div class="skills">
+                            <h2>Main Skills</h2>
+                            <p>Wireframing </p>
+                            <p>Information Architecture</p>
+                            <p>Interaction Design</p>
+                            <p>Heuristic Evaluation</p>
+                            <p>User Testing</p>
+                            <p>Usability Testing</p>
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                        </div>
 
+                        <button>Download my resume/cv as PDF <small>(xx kb)</small></button>
+                    </div>
+                </section> <!-- End of What I do section-->
 
-          <div class="action-button-container">
-            <button class="resume-download primary-btn"><i class="fa fa-file-text fa-lg"></i> Download my resume as PDF <i class="smallprint">(xx kb)</i></button>
-          </div>
+                <section id="contact">
+                    <div class="container">
+
+                        <h1>Contact me.</h1>
+                        <p>In need of some <abbr title="User Experience">UX</abbr> advice? Or maybe you just want to know what I’m up to. Either way, let’s keep in touch ;)</p>
+
+                        <form class="contact-form" role="form" method="POST" action="http://forms.brace.io/vsdteixeira@gmail.com">
+
+                            <input type="hidden" name="_next" value="//index.html#thank-you-message" />
+                            <div class="contact-details">
+                            <label for="form-name">Name<span class="required-mark">*</span></label>
+                            <input id="form-name" name="form-name" type="text" placeholder="Your Name" required>
+
+                            <label for="form-email">E-Mail<span class="required-mark">*</span></label>
+                            <input id="form-email" name="form-email" type="email" class="" placeholder="Your e-mail address" required>
+
+                            <label for="form-phone">Phone Number</label>
+                            <input id="form-phone" name="form-phone" type="tel" class="" placeholder="Your phone number">
+                            </div>
+
+                            <div class="contact-message">
+                                <label for="form-message">Message<span class="required-mark">*</span></label>
+                                <textarea id="form-message" name="form-message" class="" required></textarea>
+                            </div>
+                            <button class="primary-btn" type="submit">Send your message</button>
+
+                        </form>
+
+                        <p id="thank-you-message" class="hidden">Thank you for contacting me I'll get back to you, as soon as I can.</p>
+                        <hr>
+                        <p class="mailto">You can also drop me a line at <a href="mailto:hello@vitorteixeira.me" target="_blank">hello@vitorteixeira.me</a> <br/>or reach me through one of the following:</p>
+                        <div class="social-contacts">
+                            <a href="#" title="Linkedin"><i class="icon vticon-linkedin"></i></a>
+                            <a href="#" title="Twitter"><i class="icon vticon-twitter"></i></a>
+                            <a href="#" title="Google Plus"><i class="icon vticon-google-plus"></i></a>
+                            <a href="#" title="Github"><i class="icon vticon-github"></i></a>
+                            <a href="#" title="Slideshare"><i class="icon vticon-slideshare"></i></a>
+                        </div>
+                    </div>
+                </section> <!-- End of Contact Me section-->
+            </main>
+
+            <footer role="contentinfo">
+
+                <p class="copy">Copyright &copy; by V&iacute;tor Teixeira</p>
+            </footer>
         </div>
-      </section><!--end of section.what-i-do-->
-
-      <section id="contact" class="contact">
-        <div class="content-container">
-          <h1>Contact me.</h1>
-          <p>In need of some UX advice? Or maybe you just want to know what I’m up to. Either way, let’s keep in touch ;)</p>
-          <p><span class="loz">Note</span> Fields marked with <span class="required-mark">*</span> are required.</p>
-
-
-          <form class="" method="post" action="" onsubmit="">
-            <fieldset>
-              <label for="form-name">Name <span class="required-mark">*</span></label>
-              <input id="form-name" name="form-name" type="text" placeholder="Your Name">
-
-              <label for="form-email">E-Mail <span class="required-mark">*</span></label>
-              <input id="form-email" name="form-email" type="email" class="" placeholder="Your e-mail address">
-
-              <label for="form-phone">Phone Number</label>
-              <input id="form-phone" name="form-phone" type="tel" class="" placeholder="Your phone number">
-
-              <label for="form-message">Message <span class="required-mark">*</span></label>
-              <textarea id="form-message" name="form-message" class=""></textarea>
-            </fieldset>
-
-            <button class="primary-btn">Send Message</button>
-          </form>
-
-
-        </div>
-      </section><!--end of section.contact-->
-
-    </main>
-
-    <footer>
-      <p class="copy">Copyright &copy; by V&iacute;tor Teixeira. Made by me ;)</p>
-    </footer>
-<!--JS stuff-->
-<script src="js/smooth-scroll.min.js"></script>
-  </body>
-  </html>
+    </body>
+</html>
