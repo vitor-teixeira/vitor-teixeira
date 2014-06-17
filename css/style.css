@@ -379,7 +379,7 @@ textarea {
     padding: 1em 3em 1em 1em;
     background: rgba(74,155,23,.25);
     color: #38621d;
-
+    border: 1px solid #38621d;
 }
 
 #contact hr {
