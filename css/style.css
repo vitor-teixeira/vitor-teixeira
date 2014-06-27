@@ -337,7 +337,7 @@ section#contact{
 
 input,
 textarea {
-    border: 1px solid #ddd;
+    border: 1px solid #bbb;
     -moz-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
@@ -427,6 +427,15 @@ footer p {
     letter-spacing: 0.15em;
 }
 
+
+/*-
+404
+*/
+
+section .404{
+    background: #fafafa;
+    min-height: 200px; 
+}
 
 /*-
 RESPONSIVENESS
