@@ -1,0 +1,5 @@
+port: 4000
+permalink: /:categories/:year/:month/:title.html
+exclude: ['README.md']
+markdown: redcarpet
+pygments: true

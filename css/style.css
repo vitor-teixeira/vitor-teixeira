@@ -67,7 +67,7 @@ h2{
 
 button{
     background: #01a68a;
-    color: whitesmoke;
+    color: #fff;
     border:2px solid #01a68a;
     text-transform: uppercase;
     border-radius: 4px;
@@ -77,13 +77,13 @@ button{
 }
 
 button i.icon{
-    color: whitesmoke;
+    color: #fff;
     transition: all .5s;
 }
 
 button:hover, 
 button:focus{
-    background:whitesmoke;
+    background:#fff;
     border: 2px solid #01a68a;
     color: #333;
 }
@@ -231,7 +231,7 @@ header nav a {
     display: block;
     padding: 10px;
     text-align: center;
-    color: whitesmoke;
+    color: #fff;
     font-weight: 300;
     text-decoration: none;
 }	
@@ -239,7 +239,7 @@ header nav a {
 header nav a:hover,
 header nav a:focus
 {
-    color: whitesmoke;
+    color: #fff;
 }
 
 img.long-logo{
@@ -251,7 +251,7 @@ img.long-logo{
 Section HELLO
 */
 section#hello{
-    background: whitesmoke;
+    background: #fafafa;
 }
 
 #hello img.my-pic{
@@ -290,15 +290,16 @@ section#hello{
 /*-
 Section TOUGHTS
 */
-section#blog{
-    background: #ebebeb;
+section#blog, section#post{
+    background: #fff;
 }
+
 
 /*-
 Section WHAT I DO
 */
 section#what-i-do{
-    background: whitesmoke;
+    background: #fff;
     min-height: 200px;
 }
 
@@ -330,13 +331,13 @@ section#what-i-do{
 Section CONTACT ME
 */
 section#contact{
-    background: #ebebeb;
+    background: #fafafa;
     min-height: 200px;
 }
 
 input,
 textarea {
-    border: 2px solid #fff;
+    border: 1px solid #ddd;
     -moz-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
@@ -345,9 +346,9 @@ textarea {
 }
 input:focus,
 textarea:focus {
-    background: whitesmoke;
+    background: #fff;
     color: #444;
-    border: 2px solid #01a68a;
+    border: 1px solid #01a68a;
     box-shadow: none;
     outline: none;
 }
@@ -415,8 +416,8 @@ FOOTER
 */
 
 footer {
-    color: whitesmoke;
-    padding: 2em;
+    color: #fff;
+    padding: 0.5em;
     text-align: center;
 }
 footer p {
