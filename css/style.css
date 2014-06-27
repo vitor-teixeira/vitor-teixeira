@@ -431,8 +431,7 @@ footer p {
 /*-
 404
 */
-
-section .404{
+.404{
     background: #fafafa;
     min-height: 200px; 
 }
