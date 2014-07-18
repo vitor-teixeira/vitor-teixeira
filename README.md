@@ -1,5 +1,4 @@
-<<<<<<< HEAD
 #My personal website code.
-=======
-#My personal website code.
->>>>>>> FETCH_HEAD
+
+COPYRIGHT © 2014 VÍTOR TEIXEIRA.
+POWERED BY JEKYLL AND HOSTED BY GITHUB.

@@ -8,8 +8,8 @@
         <meta name="author" content="">
         <meta name="Keywords" content="">
         <title>{%if page.title %} {{ page.title }} | {% endif %} V&iacute;tor Teixeira</title>
-        <link rel="shortcut icon" href=icon.png>
-        <link rel=apple-touch-icon-precomposed href=icon.png>
+        <link rel="shortcut icon" href="{{ BASE_PATH }}/icon.png">
+        <link rel=apple-touch-icon-precomposed href="{{ BASE_PATH }}/icon.png">
         <meta name=apple-mobile-web-app-title content="Vítor Teixeira">
 
         <!-- Everything CSS -->
@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="{{ BASE_PATH }}/css/style.css">
 
         <!-- JS Stuff -->
-        <script src="http://use.edgefonts.net/lato:n9,i4,n1,i7,i9,n7,i1,i3,n4,n3:all.js"></script> <!--TODO: Ask only for the required weights -->
+<!--        <script src="http://use.edgefonts.net/lato:n9,i4,n1,i7,i9,n7,i1,i3,n4,n3:all.js"></script> TODO: Ask only for the required weights -->
 
         <script type="text/javascript">
             window.onload = (function(){
@@ -30,7 +30,11 @@
     <body>
         <div class="page">
             <header role="banner">
-                <a href="/"><img src="{{ BASE_PATH }}/img/long-logo-white.png" alt="Welcome to Vítor Teixeira's website" class="long-logo"></a>
+            <a href="/" class="long-logo">
+                <h1>Vítor<span>Teixeira</span></h1>
+            </a>
+            
+<!--                <a href="/"><img src="{{ BASE_PATH }}/img/long-logo-white.png" alt="Welcome to Vítor Teixeira's website" class="long-logo"></a>-->
 
                 <nav role="navigation">
                     <ul>

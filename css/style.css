@@ -234,19 +234,40 @@ header nav a {
     color: #fff;
     font-weight: 300;
     text-decoration: none;
+    max-width: 130px;
+    margin: 0 auto;
 }	
 
+header nav a.current,
 header nav a:hover,
 header nav a:focus
 {
+    color: #01a68a;
+    text-decoration: none;
+    background: #fafafa;
+}
+
+
+a.long-logo{
+    text-decoration: none;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+a.long-logo h1{
+    font-size: 2.5em;
+    font-weight: 300;
     color: #fff;
+    padding: 1em 0 1em 0;
 }
 
-img.long-logo{
-    padding: 2em 0 2em 0;
-    width: 550px;
-}
 
+a.long-logo h1 span{
+    font-weight: 100;
+}
 /*-
 Section HELLO
 */
@@ -421,12 +442,34 @@ footer {
     text-align: center;
 }
 footer p {
-    padding: 1em 0;
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 0.15em;
 }
 
+footer a{
+    color: #fff;
+}
+
+footer .social-contacts a{
+    text-decoration: none;
+}
+
+footer .social-contacts{
+    margin-top: 1em;
+}
+
+footer .social-contacts a i{
+    color: #fff;
+    font-size: 3em; 
+    transition: all .3s;
+
+}
+
+footer .social-contacts a:hover i,
+footer .social-contacts a:focus i{
+    color: #484640;
+}
 
 /*-
 404
@@ -482,6 +525,10 @@ RESPONSIVENESS
     header nav a{
         display: inline-block;
         vertical-align: middle;
+    }
+
+    a.long-logo h1{
+        font-size: 3em;
     }
 
 }
@@ -565,12 +612,29 @@ RESPONSIVENESS
         margin-right: 0;
     }
 
+    footer p.copy-left {
+        width:50%;
+        float: left;
+        text-align: left;
+    }
+
+    footer .social-contacts{
+        width:50%;
+        float:right;
+        text-align: right;
+    }
+
+    footer .social-contacts a i{
+        margin: 0 0 0 10px;
+
+    }
+
 }
 
 /* IT'S OVER 9000! */
 @media screen and (min-width: 1200px) {
 
-    section .container{
+    section .container, footer .container{
         max-width: 1100px;
         margin: 0 auto;
     }

@@ -1,7 +1,19 @@
 </main>
 <footer role="contentinfo">
 
-    <p class="copy">Copyright &copy; by V&iacute;tor Teixeira</p>
+           <div class="container">
+        <p {% if page.url != "/contact/index.html" %}class="copy-left"{% endif %}>Copyright &copy; {{ site.time | date: '%Y' }} V&iacute;tor Teixeira.<br> Powered by <a href="http://jekyllrb.com/">Jekyll</a> and hosted by <a href="https://github.com/vitor-teixeira/vitor-teixeira.github.io">Github</a>.</p>
+
+        {% if page.url != "/contact/index.html" %}
+        <div class="social-contacts">
+            <a href="https://www.linkedin.com/in/vsdteixeira" title="Linkedin" target="_blank"><i class="icon vticon-linkedin"></i></a>
+            <a href="https://twitter.com/vsdteixeira" title="Twitter" target="_blank"><i class="icon vticon-twitter"></i></a>
+            <a href="https://github.com/vitor-teixeira" title="Github" target="_blank"><i class="icon vticon-github"></i></a>
+            <a href="http://www.slideshare.net/vsdteixeira" title="Slideshare" target="_blank"><i class="icon vticon-slideshare"></i></a>
+        </div>
+        {% endif %}
+    </div>
+
 </footer>
 </div>
 </body>
