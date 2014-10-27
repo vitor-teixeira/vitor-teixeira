@@ -7,6 +7,7 @@ title: Blog
 
         <h1>Blog Entries.</h1>
 
+
         <p>Work in progress...</p>
         
         <p>But you can check my Twitter updates below ;)</p>
@@ -16,17 +17,27 @@ title: Blog
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 
-        <!--
-<ul class="posts">  
-{% for post in site.categories['blog'] %}  
-<li>  
-<span>{{ post.date | date: "%B %-d, %Y"}}</span>  
-<a href="{{ BASE_PATH }}{{ post.url }}">  
-{{ post.title }}</a>  
-</li>  
-
-{% endfor %}  
-</ul>
+<!--
+{% for post in site.categories['blog'] %}
+	<article class="blog-teaser">
+		<a href="{{ BASE_PATH }}{{ post.url }}">
+			<header class="blog-title">
+				<h6 class="post-date">{{ post.date | date: "%d<span> . </span><br />%m<span> . </span><br />%y"}}</h6>
+				<h2 class="post-title">{{ post.title }}</h2>
+			</header>
+			{% if post.intro %}
+			<div class="blog-content">
+				<p>{{post.intro | strip_html}}</p>
+    		</div>
+    		{% endif %}			
+    	</a>
+	</article>
+	{% endfor %}       
+       
 -->
+       
+        
+
+
     </div>
 </section>

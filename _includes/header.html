@@ -17,10 +17,7 @@
         <link rel="stylesheet" href="{{ BASE_PATH }}/css/normalize.css">
         <link rel="stylesheet" href="{{ BASE_PATH }}/css/style.css">
 
-        <!-- JS Stuff -->
-<!--        <script src="http://use.edgefonts.net/lato:n9,i4,n1,i7,i9,n7,i1,i3,n4,n3:all.js"></script>         TODO: Ask only for the required weights -->
-        
-
+        {% if page.url == "/contact/index.html" %}
         <script type="text/javascript">
             window.onload = (function(){
                 if(window.location.hash == '#thank-you-message'){
@@ -28,19 +25,17 @@
                 }
             })
         </script>
+        {% endif %}
     </head>
     <body>
         <div class="page">
             <header role="banner">
-            <a href="/" class="long-logo">
-                <h1>Vítor<span>Teixeira</span></h1>
-            </a>
-            
-<!--                <a href="/"><img src="{{ BASE_PATH }}/img/long-logo-white.png" alt="Welcome to Vítor Teixeira's website" class="long-logo"></a>-->
+                <a href="/" class="long-logo">
+                    <h1>Vítor<span>Teixeira</span></h1>
+                </a>
 
                 <nav role="navigation">
                     <ul>
-                        <!--                        <li><a href="#"><{{ BASE_PATH }}/img src="img/short-logo-white.png" alt="" class="short-logo"></a></li>-->
                         <li><a{% if page.url == "/index.html" %} class="current" {% endif %} href="/">About Me</a></li>
                         <li><a{% if page.url == "/blog/index.html" %} class="current" {% endif %} href="/blog/">Blog</a></li>
                         <li><a{% if page.url == "/work/index.html" %} class="current" {% endif %} href="/work/">What I Do</a></li>
@@ -48,4 +43,4 @@
                     </ul>
                 </nav>
             </header>
-           <main role="main">
+            <main role="main">

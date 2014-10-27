@@ -49,6 +49,7 @@ img{
 
 em{
     font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -191,13 +192,13 @@ Personal Icon Font Stuff
 }
 
 ::-moz-selection {
-  color: #fff;
-  background: #01a68a;
+    color: #fff;
+    background: #01a68a;
 }
 
 ::selection {
-  color: #fff;
-  background: #01a68a;
+    color: #fff;
+    background: #01a68a;
 }
 
 /*-
@@ -210,9 +211,6 @@ Mobile-First Layout Stuff
 }
 section{
     text-align: center;
-}
-
-section{
     padding: 2em;
 }
 
@@ -232,9 +230,10 @@ header nav {
 
 header nav li {
     margin: 0;
-    display: block;
+    display: inline-block;
     margin-bottom: 3px;
     text-transform: uppercase;
+    width: 45%;
 }
 
 header nav a {
@@ -278,6 +277,7 @@ a.long-logo h1{
 a.long-logo h1 span{
     font-weight: 100;
 }
+
 /*-
 Section HELLO
 */
@@ -286,7 +286,7 @@ section#hello{
 }
 
 #hello img.my-pic{
-    border: 4px double #484640;
+    border: 3px solid #484640;
     border-radius: 100%;
 }
 
@@ -324,6 +324,8 @@ Section TOUGHTS
 section#blog, section#post{
     background: #fff;
 }
+
+
 
 
 /*-
@@ -430,7 +432,7 @@ textarea {
 
 #contact .social-contacts a i{
     color: #01a68a;
-    font-size: 4em; 
+    font-size: 3.2em; 
     transition: all .3s;
 
 }
@@ -511,7 +513,14 @@ RESPONSIVENESS
         }
     }
 
-/* Scaling up! */
+/*Typical phone landscape size and up*/
+@media screen and (min-width: 480px){
+    header nav li {
+        width: auto
+    }
+}
+
+/* Scaling up to tablets! */
 @media screen and (min-width: 768px) {
     body{
         font-size: 1.2em;
@@ -528,7 +537,7 @@ RESPONSIVENESS
         display: inline;
         margin-left: 15px;
         background: none;
-        vertical-align: middle;
+        vertical-align: middle;  
     }
 
     header nav li:first-child{
@@ -551,6 +560,8 @@ RESPONSIVENESS
         width: 100%;   
         overflow: hidden;
     }
+    
+    
 
     #hello{
         text-align: left;
