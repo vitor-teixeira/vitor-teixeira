@@ -1,0 +1,89 @@
+html, body{
+    font-family: $general-face;
+    font-weight:300;
+    font-size: 100%;
+}
+
+
+// ------------------------------------------------------------------
+// Headings
+// ------------------------------------------------------------------
+h1{
+    font-size: 2.8125em;
+    font-family: $title-face;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 1.5em;
+    color: $brand-color;
+}
+
+// ------------------------------------------------------------------
+// Paragraphs
+// ------------------------------------------------------------------
+p {
+    line-height: 1.6;
+
+    @media only screen and (min-width: 47em) and (max-width: 60em) {
+        font-size: 1.2em;
+    }
+
+    @media only screen and (min-width: 60em) {
+        font-size: 1.1em;
+    }
+}
+
+// ------------------------------------------------------------------
+// Links
+// ------------------------------------------------------------------
+a{
+    color: $brand-color;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus{
+        text-decoration: none;
+    }
+}
+
+// ------------------------------------------------------------------
+// Sections spacing
+// ------------------------------------------------------------------
+.content-drawer section{
+    border: 0px none;
+    padding: 3.5em 0px;
+}
+.content-drawer section + section{
+    margin-top: 0px;
+}
+
+// ------------------------------------------------------------------
+// Helpers
+// ------------------------------------------------------------------
+
+@mixin dashed-border($padding, $border-size, $background) {
+    padding: $padding;
+    border: $border-size dashed $brand-color;
+    background: $background;
+}
+
+.secondary-text{
+    color: $secondary-text-color;
+}
+
+
+.icon{
+    line-height: 1;
+    vertical-align: middle;
+}
+
+// ------------------------------------------------------------------
+// Visually Hidden
+// ------------------------------------------------------------------
+
+
+%hide-text {
+    border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;
+}

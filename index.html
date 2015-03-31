@@ -1,43 +1,10 @@
 ---
 layout: default
 ---
-    <section id="hello">
-        <div class="container">
-            <h1>Hello.</h1>
-            <img src="img/vitorteixeira.jpg" alt="It's actually a picture of me" class="my-pic">
-            <div class="my-info">
-                <p class="name">V&iacute;tor Teixeira</p>
-                <p><i class="icon vticon-briefcase"></i>User Experience Designer</p>
-                <i class="icon vticon-location"></i><a href="https://goo.gl/maps/n602z" target="_blank">Lisbon, Portugal</a>
-            </div>
-            <div class="presenting-myself">
-                <p class="presentation-lead">Welcome to my site. I&#39;m V&iacute;tor and I&#39;m really into <em>Usability</em>.</p>
-                <p>I also love <em>Reading</em>,  going to the <em>Movies</em> and <em>Repurposing</em> old stuff. Oh, and I&#39;m also crazy about <em>Dogs</em>.</p>
-            </div>
-
-            <!--                        <a href="#">Add my vcard to your contacts</a>-->
-        </div>
-    </section> <!-- End of Hello section-->
-
-    <section id="blog">
-        <div class="container">
-
-            <h1>Latest Blog Entries.</h1>
-
-           <p>Check back soon...</p>
-           <!--
-            <ul class="posts">  
-                {% for post in site.categories['blog'] limit:3 %}  
-                <li>  
-                    <span>{{ post.date | date: "%B %-d, %Y"}}</span>  
-                    <a href="{{ BASE_PATH }}{{ post.url }}">  
-                        {{ post.title }}</a>  
-                </li>  
-
-                {% endfor %}  
-            </ul>
 
 
-            <a href="/blog/" class="button">View all entries</a>-->
-        </div>
-    </section> <!-- End of Thoughts section-->
+{% include about.html %}
+{% include blog.html %}
+{% include contact.html %}
+
+

@@ -1,0 +1,30 @@
+.blog{
+    background-color: $blog-bg-color;
+
+    h1{
+        color: $brand-color;
+    }  
+
+    .blog-teaser {
+
+        img{
+            @include dashed-border(1em, 3px, #fff);
+        }
+
+        p{
+            font-family: $title-face;
+            font-size: 1.625em;
+        }
+    }
+
+
+    a:hover, a:focus {
+         img{
+            border-color: $hover-link-color;
+         }
+        
+        p, .read-more{
+        }
+    }
+}
+

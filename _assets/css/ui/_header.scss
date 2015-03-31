@@ -1,0 +1,82 @@
+// ===========================================
+// TOP MENU
+// ===========================================
+
+#top{
+    .top-menu{
+        width: 100%;
+        background: none repeat scroll 0% 0% $brand-color;
+        z-index: 10;
+        text-transform: uppercase;
+
+        .navigation{
+            margin-top: 0.8em;
+
+            li{
+                @media only screen and (max-width: 37.813em) {
+                    font-size: .89em;
+                }
+
+                &:last-child a{
+                    
+                    @media only screen and (max-width: 40em) {
+                    padding-right: 0;
+                }
+                 
+                }
+
+            }
+
+
+        }
+
+        li{
+
+            a{
+                color: $dark-bg-text-color;
+                text-decoration: none;
+
+                &:hover{
+                    background: #18b295;
+                }
+
+
+            }
+
+            .logo-placeholder{
+
+                .icon{
+                    font-size: 3em;
+                }
+                span{
+                    font-size: 1.2em;
+                    margin-left: 0.8em;
+                }
+
+                &:hover,
+                &:focus{
+
+                    text-decoration: none;
+                    background: #18b295;
+                }
+
+                @media only screen and (max-width: 40em) {
+                    padding: 0.5em 0em;
+                }
+            }
+        }
+
+
+        .active {
+            text-decoration: none;
+            background: #18b295;
+            font-weight: 400;
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+}

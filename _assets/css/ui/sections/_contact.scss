@@ -1,0 +1,73 @@
+.contact{
+    background-color: $contact-bg-color;
+
+    h1{
+        color: $brand-color;
+        margin-bottom: 0.2em;
+    }
+
+    .contact-prompt{
+        color: $dark-bg-text-color;
+        font-size: 1.5em;
+    }
+
+    .contact-form{
+        label{
+            color: $dark-bg-text-color;
+            font-size: 1.25em;
+
+            .required-mark{
+                color: $brand-color;
+                border-bottom: none;
+            }
+        }
+
+        input, textarea {
+            background-color: $dark-on-dark-bg-color;
+            border: none;
+            color: $secondary-text-color;
+            -moz-transition: all 0.2s linear;
+            -ms-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            -webkit-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+        }
+        input:focus,
+        textarea:focus {
+            border: 1px solid $brand-color;
+            color: $dark-bg-text-color;
+            box-shadow: none;
+            outline: none;
+        }
+
+        textarea{
+            resize: vertical;
+            @media only screen and (min-width: 960px) {
+                min-height: 13.7em
+            }
+        }
+        
+        .action-btn{
+            font-family: $title-face;
+            background: none;
+            color: $brand-color;
+            border: 1px solid $brand-color;
+            font-size: 1.25em;
+            text-transform: uppercase;
+            padding: 0 2.5em;
+            border-radius: 4px;
+            
+            &:hover,
+            &:focus {	
+            background: $dark-on-dark-bg-color;
+            }
+        }
+        
+    }
+ .ink-alert.basic.success {
+     display: none;
+     background-color:  $brand-color;
+     color: $dark-bg-text-color;
+ }   
+}
+

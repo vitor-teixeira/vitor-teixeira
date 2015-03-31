@@ -1,0 +1,82 @@
+footer{
+    background-color: $footer-bg-color;
+    padding: 3.5em 0;
+    .mailto{
+        color: $footer-text-color;
+        font-size: 1.25em;
+
+        a{
+            &:hover,
+            &:focus{
+                text-decoration: none;
+                color: $dark-bg-text-color;
+            }
+        }
+    }
+
+
+    .social{
+        $squareWidth: 2em;
+
+        li {
+            display: inline-block;
+            width: $squareWidth;
+            height: $squareWidth;
+            margin: 0 0.8em 0 0;
+            background-color: $brand-color;
+            border-radius: 100%;
+            list-style-type: none;
+            font-size: 2em;
+
+            &:last-child { margin-right: 0;}
+
+
+            @media only screen and (max-width: 27em) {
+                font-size: 1.5em;
+                margin: 0 0.5em 0 0;
+
+            }
+        }
+
+        a{   
+            display: block;
+            height: $squareWidth;
+            width: $squareWidth;
+            padding-top: ($squareWidth - 1em) / 2;
+            border: none; //kill default hover
+            text-align: center;
+            color: #222;
+            text-decoration: none;
+
+            &:hover,
+            &:focus {	
+                color: #fff;
+            }
+        }
+
+        span {
+            display: block;
+            width: 0;
+            height: 0;
+            @extend %hide-text;
+        }
+
+    }
+
+    .copyright{
+        font-size: 0.75em;
+        text-transform: uppercase;
+        p{
+            margin-bottom: 0;
+            color: $copy-text-color;
+        }
+        
+        a{
+            &:hover,
+            &:focus{
+                text-decoration: none;
+                color: $dark-bg-text-color;
+            }
+        }
+    }
+}
