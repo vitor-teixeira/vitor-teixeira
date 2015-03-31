@@ -1,16 +1,9 @@
-<<<<<<< HEAD
-=======
 ---
 layout: null
 permalink: /robots.txt
 ---
->>>>>>> FETCH_HEAD
 # robotstxt.org/
 # Allow crawling of all content
 User-agent: *
 Disallow:
-<<<<<<< HEAD
-# Sitemap: /sitemap.xml
-=======
 # Sitemap: {{ site.url }}/sitemap.xml
->>>>>>> FETCH_HEAD
