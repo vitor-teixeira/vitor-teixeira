@@ -8,7 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
 twitter_username: vsdteixeira
 github_username:  vitor-teixeira
 permalink: /:year/:month/:title.html
-
+  
 # Build settings
 markdown: redcarpet
 assets:
