@@ -1,0 +1,25 @@
+<footer class="clearfix">
+    <div class="ink-grid">
+        <div class="column-group push-middle">
+            <div class="xlarge-40 large-50 all-90 align-center push-center">
+                {% if page.url == "/index.html" %}
+                <p class="mailto">You can also drop me a line at <a href="mailto:vsdteixeira@gmail.com" target="_blank">vsdteixeira@gmail.com</a> or reach me through one of the following:</p>
+                {% endif %}
+                <div class="bottom-space social-contacts">
+                    <ul class="clearfix unstyled social">
+                        <li class="small-vertical-gutters tiny-vertical-gutters"><a target="_blank" href="https://twitter.com/vsdteixeira" class="icon vticon-twitter" title="Twitter"><span>Twitter</span></a></li>
+                        <li><a target="_blank" href="https://github.com/vitor-teixeira" class="icon vticon-github" title="GitHub"><span>GitHub</span></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/vsdteixeira" class="icon vticon-linkedin" title="Linkedin"><span>Linkedin</span></a></li>
+                        <li><a target="_blank" href="http://www.slideshare.net/vsdteixeira" class="icon vticon-slideshare" title="Slideshare"><span>Slideshare</span></a></li>                   
+                    </ul>
+                </div>
+
+                <div class="top-space copyright">        
+                    <p>Copyright &copy; {{ site.time | date: '%Y' }} V&iacute;tor Teixeira.</p>
+                    <p>Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> and hosted by <a href="https://github.com/vitor-teixeira/vitor-teixeira.github.io" target="_blank">Github</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+

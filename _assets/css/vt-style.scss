@@ -1,0 +1,27 @@
+// ===========================================
+// VARIABLES
+// ===========================================
+@import "_vars.scss";
+
+// ===========================================
+// BASE STYLES
+// ===========================================
+@import "ui/_base.scss";
+
+
+// ===========================================
+// VENDOR STYLES
+// ===========================================
+@import "vendor/_icons.scss";
+@import "vendor/_animate.scss";
+
+// ===========================================
+// COMPONENT STYLES
+// ===========================================
+@import "ui/_header.scss";
+@import "ui/_footer.scss";
+@import "ui/sections/_welcome.scss";
+@import "ui/sections/_about.scss";
+@import "ui/sections/_blog.scss";
+@import "ui/sections/_contact.scss";
+@import "ui/sections/_post.scss";

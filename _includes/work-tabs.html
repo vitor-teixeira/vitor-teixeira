@@ -1,0 +1,71 @@
+<section class="work" id="work">
+    <div class="ink-grid">
+
+        <div id="blogTabs" class="ink-tabs top">
+
+            <ul class="tabs-nav">
+                <li><a class="tabs-tab" href="#work-posts"><h1>Work</h1></a></li> 
+                <li><a class="tabs-tab" href="#speaking-posts"><h1>Speaking</h1></a></li>
+                <li><a class="tabs-tab" href="#blog-posts"><h1>Blog</h1></a></li>
+            </ul>
+
+            <div class="column-group gutters tabs-content" id="work-posts">
+                {% for post in site.categories['work'] %}
+                <div class="xlarge-25 large-25 medium-50 small-50 tiny-100 post">
+                    <article class="blog-teaser">    
+                        <a href="{{ BASE_PATH }}{{ post.url }}">
+                            <header class="blog-title push-center">
+                                <img src="{{post.img}}" alt="{{post.img-alt-text}}">
+                                <p class="post-title">{{ post.title }}</p>
+                                <p class="icon vticon-arrow-right"></p>
+                            </header>
+                        </a>
+                    </article>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="column-group gutters tabs-content" id="speaking-posts">
+                {% for post in site.categories['speaking'] %}
+                <div class="xlarge-25 large-25 medium-50 small-50 tiny-100 post">
+                    <article class="blog-teaser">    
+                        <a href="{{ BASE_PATH }}{{ post.url }}">
+                            <header class="blog-title push-center">
+                                <img src="{{post.img}}" alt="{{post.img-alt-text}}">
+                                <p class="post-title">{{ post.title }}</p>
+                                <p class="icon vticon-arrow-right"></p>
+                            </header>
+                        </a>
+                    </article>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="column-group gutters tabs-content" id="blog-posts">
+                {% for post in site.categories['blog'] %}
+                <div class="xlarge-25 large-25 medium-50 small-50 tiny-100 post">
+                    <article class="blog-teaser">    
+                        <a href="{{ BASE_PATH }}{{ post.url }}">
+                            <header class="blog-title push-center">
+                                <img src="{{post.img}}" alt="{{post.img-alt-text}}">
+                                <p class="post-title">{{ post.title }}</p>
+                                <p class="icon vticon-arrow-right"></p>
+                            </header>
+                        </a>
+                    </article>
+                </div>
+                {% endfor %}
+            </div>
+
+        </div>
+<!--        <a href="#" class="push-right">View all posts ></a>-->
+
+
+
+
+
+
+
+    </div>
+    </div>
+</section>

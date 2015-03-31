@@ -1,0 +1,22 @@
+<header id="top">
+    {% include welcome.html %}
+    <div class="top-menu" id="top-menu">
+        <nav class="ink-navigation ink-grid">
+            <ul class="menu horizontal">
+                <li class="xlarge-push-left"><a href="{% if page.url == '/index.html' %} #top {% else %} / {% endif %}" class="scroll logo-placeholder"><i class="icon vticon-vt-logo"></i> <span class="hide-small hide-tiny">Vítor Teixeira</span></a></li>
+                <div class="push-right navigation">
+                    <li>
+                        <a href="{% if page.url == '/index.html' %} #about {% else %} /#about {% endif %}" class="" title="Who is Vítor Teixeira">About<span class="hide-small hide-tiny"> Me</span></a>
+                    </li>
+                    <li>
+                        <a href="{% if page.url == '/index.html' %} #blog {% else %} /#blog {% endif %}" class="" title="Latest writings">Blog</a>
+                    </li>
+                    <li>
+                        <a href="{% if page.url == '/index.html' %} #contact {% else %} /#contact {% endif %}" class="" title="Get in touch with me">Contact<span class="hide-small hide-tiny"> Me</span></a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+</header>
