@@ -3,7 +3,12 @@
 
     h1{
         color: $brand-color;
-    }  
+    }
+
+
+    .tobedone-text{
+        font-weight: 400;
+    }
 
     .blog-teaser {
 
@@ -19,10 +24,10 @@
 
 
     a:hover, a:focus {
-         img{
+        img{
             border-color: $hover-link-color;
-         }
-        
+        }
+
         p, .read-more{
         }
     }

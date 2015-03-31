@@ -40,8 +40,7 @@ p {
 // ------------------------------------------------------------------
 a{
     color: $brand-color;
-    text-decoration: underline;
-
+    
     &:hover,
     &:focus{
         text-decoration: none;
@@ -78,6 +77,75 @@ a{
     line-height: 1;
     vertical-align: middle;
 }
+
+.headerless{
+    background-color: $brand-color;
+}
+
+.headerless .ink-grid .column-group{
+    color: $dark-bg-text-color;
+    text-shadow: 0px 1px 0px rgb(8, 111, 94);
+
+    h1{
+        color: $dark-bg-text-color; 
+        margin-bottom: 0.1em;
+    }
+
+    p{
+        font-size: 1.625em;
+    }
+
+    a.action{
+        font-size: 0.8em;
+        font-weight: 400;
+        font-family: $title-face;
+        color: $dark-bg-text-color;
+        text-transform: uppercase;
+        border-radius: 4px;
+        border: 1px solid $dark-bg-text-color;
+        padding: 0.7em;
+        display: inline-block;
+        margin-top: 1em;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {	
+            background: $dark-bg-text-color;
+            color: $brand-color;
+            text-shadow: none;
+        }
+
+    }
+
+    .logo-placeholder{
+        display: block;
+        line-height: 1.7;
+        color: $dark-bg-text-color;
+        text-decoration: none;
+        max-width: 25,625em;
+        padding: 0.5em 1em;
+
+
+        .icon{
+            font-size: 7em;
+        }
+        span{
+            font-size: 2em;
+            margin-left: 0.8em;
+            text-transform: uppercase;
+        }
+
+        &:hover,
+        &:focus{
+
+            text-decoration: none;
+            background: #18b295;
+        }
+    }
+
+}
+
+
 
 // ------------------------------------------------------------------
 // Visually Hidden

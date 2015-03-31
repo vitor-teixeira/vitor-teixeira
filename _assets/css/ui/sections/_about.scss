@@ -1,55 +1,24 @@
 .about-me{
-    .my-pic{
-        @include dashed-border(0.5em, 3px, none);
-    }
 
-    .my-info {
-        h1{
-            font-size: 1.5em;
-            color: $brand-color;
-            margin-bottom: .1em;
-        }  
-        .role{
-            font-size: 1.1em;
-            color: $brand-color;
-            margin-bottom: .1em;
-        }
-        .location{
-            display: block;
-            font-size: 1.1em;
-            margin-bottom: 1em;
-            
-        }
-        .secondary-text{
-            font-size: 1em;
-            line-height: 1.5;
-        }
-
-    }
-
-
-    ///////////////
-    /// ALT STYLES FOR NEW CONTENT
-    ///////////////
     .about-me-punch{
-        font-size: 1.5em;
+        font-size: 1.7em;
         line-height: 1.4;
         font-weight: 300;
+        
+        @media only screen and (max-width: 60em) {
+        font-size: 1.4em;
+    }
+    }
+    .about-me-text{
+        font-size: 1.375em;
+        
+         @media only screen and (max-width: 60em) {
+        font-size: 1.1em;
     }
 
-    .experience-education{
-        .job-title, .course-title{
-            font-size: 1.25em;
-            font-weight: 400;
-            margin-bottom: .1em;
-
-            span{
-                color: $secondary-text-color;;
-            }
-        }
-        .job-dates, .course-dates{
-            font-size: 1.125em;
-            margin-bottom: .2em;
-        }
+    }
+    .about-me-secondary{
+        font-size: 1.1em;
+        color: $secondary-text-color;
     }
 }

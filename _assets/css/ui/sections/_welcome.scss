@@ -7,9 +7,9 @@
     height: 100vh;
 
     @media only screen and (min-width: 47em) {
-        background-image: url(asset_path('header-bg@1X.jpg'));
+        background-image: url(asset_path('header-bg@2X.jpg'));
         background-size: cover;
-        background-position: bottom right;    
+        background-position: right bottom;    
     }
 
 }
@@ -65,5 +65,5 @@
     /* Fallback for web browsers that don't support RGBa */
     background-color: $brand-color;
     /* RGBa with 85% opacity */
-    background-color: rgba($brand-color, 0.85);
+    background-color: rgba($brand-color, 0.75);
 }
