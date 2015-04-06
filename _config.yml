@@ -2,13 +2,15 @@
 title: UX Portfolio of Vítor Teixeira
 email: vsdteixeira@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
- Vítor Teixeira is a User Experience Designer from Lisbon.
+ Virtual home of Vítor Teixeira's User Experience Portfolio.
 #baseurl: "" # the subpath of your site, e.g. /blog/
-#url: "" # the base hostname & protocol for your site
+url: "http://vitor-teixeira.github.io" # the base hostname & protocol for your site
 twitter_username: vsdteixeira
 github_username:  vitor-teixeira
 permalink: /:year/:month/:title.html
-
+gems:
+ - jekyll-sitemap
+  
 # Build settings
 markdown: redcarpet
 assets:
