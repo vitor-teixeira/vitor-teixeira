@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
     <meta charset="utf-8">
@@ -9,18 +9,60 @@
     <title> UX Portfolio of Vítor Teixeira</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
-    <meta name="description" content="Vítor Teixeira is a User Experience Designer from Lisbon.
+    <meta name="description" content="Virtual home of Vítor Teixeira's User Experience Portfolio.
 ">
+
+    <!-- Open Graph Tags  -->
+    <meta content="UX Portfolio of Vítor Teixeira" property="og:site_name">
+    
+    <meta content="UX Portfolio of Vítor Teixeira" property="og:title">
+    
+    
+    <meta content="website" property="og:type">
+    
+    
+    <meta content="Virtual home of Vítor Teixeira's User Experience Portfolio.
+" property="og:description">
+    
+    
+    <meta content="http://vitor-teixeira.github.io/index.html" property="og:url">
+    
+    
+    
+    <meta content="/assets/header-bg@2X.jpg" property="og:image">
+    
+    
+    
+
+    <!-- Twitter cards  -->
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="vsdteixeira">
+    <meta name="twitter:creator" content="vsdteixeira">
+    
+    <meta name="twitter:title" content="UX Portfolio of Vítor Teixeira">
+    
+    
+    <meta name="twitter:url" content="http://vitor-teixeira.github.io/index.html">
+    
+    
+    <meta name="twitter:description" content="Virtual home of Vítor Teixeira's User Experience Portfolio.
+">
+    
+    
+    <meta name="twitter:image:src" content="http://vitor-teixeira.github.io/assets/header-bg@2X.jpg">
+    
+    
     <!-- load Ink's CSS -->
     <link rel="stylesheet" href="/assets/vendor/ink-flex.min.css">
-    <!-- load Ink's css for IE8 -->
+    <!-- load Ink's css for IE8 and below -->
     <!--[if lt IE 9 ]>
-<link rel="stylesheet" href="../assets/css/vendor/ink-ie.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="http://cdn.ink.sapo.pt/3.1.6/css/ink-ie.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
 <![endif]-->
     <!-- load custom CSS and Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Montserrat|Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/assets/vt-style.css">
-    <link rel="canonical" href="/">
+    <link rel="canonical" href="http://vitor-teixeira.github.io/">
 </head>
 
 
@@ -72,11 +114,10 @@
 
             <div class="xlarge-70 large-70 medium-100 small-100 tiny-100 push-center">
 
-                <p class="about-me-punch small-align-left align-center">I'm a User Experience Professional with a passion for solving problems with smart, and simple, user centred design. Passionate about life and technology, my goal is to make sure the latter does not get in the way of the former, but instead makes it better.</p>
+                <p class="about-me-punch small-align-left align-center">I'm a User Experience Professional with a passion for solving problems using smart, and simple, user centred design. Passionate about life and technology, my goal is to make sure the latter does not get in the way of the former, but instead makes it better.</p>
 
 
                 <div class="xlarge-70 large-70 medium-90 small-100 tiny-100 push-center">
-
                     <p class="about-me-text">Currently I live in <a href="https://goo.gl/maps/n602z" target="_blank">Lisbon</a> and work for <a href="http://about.sapo.pt" target="_blank">SAPO</a> in the <a href="http://ux.sapo.pt/equipa" target="_blank"><abbr title="User Experience">UX</abbr> Team</a>. After work I'm an avid reader, movies and tv shows addict, and sort of a handyman. Oh, and a proud dog owner too!</p>
                     <p class="about-me-text">Find more about what I do and what drives me in the <a href="#blog" class="scroll" title="Go to latest writings list">articles below</a>. Also, feel free to <a href="#contact" class="scroll" title="Go to contact form">drop me a line</a> if you have any questions, comments, or would just like to say hello.</p>
                     <p class="about-me-secondary">Make sure to check out my <a href="https://www.linkedin.com/in/vsdteixeira" title="Linkedin profile" target="_blank">LinkedIn profile</a> if you are interested in the companies and projects I have worked on.</p>
@@ -104,17 +145,6 @@
             </div>
             <!--
 
-<div class="xlarge-25 large-25 medium-50 small-100 tiny-100 post">
-<article class="blog-teaser">    
-<a href="/2015/03/first-post.html">
-<header class="blog-title push-center">
-<img src="/img/blog-posts.gif" alt="Alt text here" class="quarter-bottom-space">
-<p class="bottom-space align-left small-align-center medium-align-center post-title">Welcome to my new site!</p>
-</header>
-</a>
-</article>
-</div>
-
 -->
         </div>
     </div>
@@ -123,12 +153,12 @@
 <section class="scrollto contact" id="contact">
     <div class="ink-grid">
         <div class="column-group">
-            <div class="xlarge-70 large-70 all-80 push-center">
+            <div class="xlarge-70 large-70 all-90 push-center">
                 <h1 class="align-center half-bottom-space">Get in touch</h1>
                 <p class="align-center contact-prompt">In need of some <abbr title="User Experience">UX</abbr> advice? Or maybe you just want to know what I’m up to. Either way, let’s keep in touch!</p>
                 <form class="ink-form contact-form" role="form" method="POST" action="http://formspree.io/vsdteixeira@gmail.com">
 
-                    <input type="hidden" name="_next" value="//vitor-teixeira.github.io/#thank-you-message" />
+                    <input type="hidden" name="_next" value="/thanks" />
 
                     <div class="column-group gutters">
                         <div class="control-group xlarge-50 large-50 all-100 contact-details">
@@ -163,12 +193,6 @@
                     </div>
 
                 </form>
-
-
-                <div class="ink-alert basic success" role="alert">
-                    <p id="thank-you-message" class="hidden">Thank you for your message. I'll get back to you, as soon as I can.</p>
-                </div>
-
             </div>
         </div>
     </div>
