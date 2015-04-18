@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>UX Portfolio of Vítor Teixeira</title>
-    <description>Virtual home of Vítor Teixeira&#39;s User Experience Portfolio.
+    <title>User Experience Portfolio of Vítor Teixeira</title>
+    <description>Virtual home of Vítor Teixeira&#39;s User Experience Portfolio. He&#39;s into User Research, Information Architecture, Responsive Web Design, and more.
 </description>
     <link>http://vitor-teixeira.github.io/</link>
     <atom:link href="http://vitor-teixeira.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 12 Apr 2015 20:44:13 +0100</pubDate>
-    <lastBuildDate>Sun, 12 Apr 2015 20:44:13 +0100</lastBuildDate>
+    <pubDate>Sat, 18 Apr 2015 01:22:23 +0100</pubDate>
+    <lastBuildDate>Sat, 18 Apr 2015 01:22:23 +0100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
   </channel>
