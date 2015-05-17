@@ -8,13 +8,13 @@
         background: none repeat scroll 0% 0% $brand-color;
         z-index: 10;
         text-transform: uppercase;
-        
+
         .navigation{
             margin-top: 0.8em;
 
             li{
                 @media only screen and (max-width: 37.813em) {
-                    font-size: .89em;
+                    font-size: .8em;
                 }
 
                 &:last-child a{
@@ -29,7 +29,7 @@
 
 
         }
-        
+
         //Hammer code below to replace framework's style
         .ink-navigation ul.menu.horizontal li.sections-container{
             float: right;
@@ -53,6 +53,10 @@
 
                 .icon{
                     font-size: 3em;
+
+                    @media only screen and (max-width: 37.813em) {
+                        font-size: 2.5em;
+                    }
                 }
                 span{
                     font-size: 1.2em;

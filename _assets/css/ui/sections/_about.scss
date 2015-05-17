@@ -10,7 +10,7 @@
         font-weight: 300;
 
         @media only screen and (max-width: 60em) {
-            font-size: 1.4em;
+            font-size: 1.25em;
         }
     }
     .about-me-text{
@@ -24,5 +24,9 @@
     .about-me-secondary{
         font-size: 1.1em;
         color: $secondary-text-color;
+        
+        @media only screen and (max-width: 60em) {
+            font-size: 0.875em;
+        }
     }
 }

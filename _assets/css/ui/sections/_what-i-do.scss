@@ -1,0 +1,21 @@
+.what-i-do{
+    background-color: $blog-bg-color;
+
+    h1{
+        color: $brand-color;
+        margin-bottom: 0.2em;
+    }
+    
+    .what-i-do-intro{
+        font-size: 1.5em;
+        
+        @media only screen and (max-width: 37.813em) {
+                    font-size: 1.1em;
+        }
+    }
+
+    h2{
+        color: $copy-text-color;
+        font-weight: 300;
+    }
+}

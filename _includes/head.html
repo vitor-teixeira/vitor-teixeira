@@ -74,13 +74,24 @@
 
     <!-- load Ink's CSS -->
     {% stylesheet vendor/ink-flex.min.css %}
-    <!-- load Ink's css for IE8 and below -->
+   
+     <!-- load Ink's css for IE8 and below -->
     <!--[if lt IE 9 ]>
-<link rel="stylesheet" href="http://cdn.ink.sapo.pt/3.1.6/css/ink-ie.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="http://cdn.ink.sapo.pt/3.1.7/css/ink-ie.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
 <![endif]-->
+   
     <!-- load custom CSS -->
     {% stylesheet vt-style %}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <!-- test browser flexbox support and load legacy grid if unsupported -->
+    <script type="text/javascript" src="http://cdn.ink.sapo.pt/3.1.7/js/modernizr.js"></script>
+    <script type="text/javascript">
+        Modernizr.load({
+            test: Modernizr.flexbox,
+            nope : 'http://cdn.ink.sapo.pt/3.1.7/css/ink-legacy.min.css'
+        });
+    </script>
 
     <!-- Hotjar Tracking Code for vitor-teixeira.github.io -->
     <script>

@@ -9,6 +9,11 @@
     .contact-prompt{
         color: $dark-bg-text-color;
         font-size: 1.5em;
+
+
+        @media only screen and (max-width: 37.813em) {
+            font-size: 1.1em;
+        }
     }
 
     .contact-form{
@@ -46,7 +51,7 @@
                 min-height: 13.7em
             }
         }
-        
+
         .action-btn{
             font-family: $title-face;
             background: none;
@@ -56,18 +61,18 @@
             text-transform: uppercase;
             padding: 0 2.5em;
             border-radius: 4px;
-            
+
             &:hover,
             &:focus {	
-            background: $dark-on-dark-bg-color;
+                background: $dark-on-dark-bg-color;
             }
         }
-        
+
     }
- .ink-alert.basic.success {
-     display: none;
-     background-color:  $brand-color;
-     color: $dark-bg-text-color;
- }   
+    .ink-alert.basic.success {
+        display: none;
+        background-color:  $brand-color;
+        color: $dark-bg-text-color;
+    }   
 }
 
