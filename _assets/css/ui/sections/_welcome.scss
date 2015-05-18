@@ -6,8 +6,15 @@
     height: 600px;
     height: 100vh;
 
-    @media only screen and (min-width: 47em) {
-        background-image: url(asset_path('header-bg@2X.jpg'));
+    @media only screen and (max-width: 45em) {
+        height: 300px;
+        background-image: url(asset_path('header-bg.jpg'));
+        background-size: cover;
+        background-position: right bottom;    
+    }
+
+    @media only screen and (min-width: 45em) {
+        background-image: url(asset_path('header-bg@3X.jpg'));
         background-size: cover;
         background-position: right bottom;    
     }
@@ -26,15 +33,28 @@
     p.icon{
         font-size: 6em;
         margin-bottom: 0.4em;
+       
+        @media only screen and (max-width: 45em) {
+            display: none;
+        }
     }
 
     h1{
         color: $dark-bg-text-color; 
         margin-bottom: 0.1em;
+
+        @media only screen and (max-width: 45em) {
+            font-size:2em;
+        }
+
     }
 
     p.punch{
         font-size: 1.625em;
+
+        @media only screen and (max-width: 45em) {
+            font-size: 1.2em;
+        }
     }
 
     a.scroll-btn{
@@ -55,6 +75,10 @@
             background: $dark-bg-text-color;
             color: $brand-color;
             text-shadow: none;
+        }
+
+        @media only screen and (max-width: 45em) {
+            display: none;
         }
 
     }
