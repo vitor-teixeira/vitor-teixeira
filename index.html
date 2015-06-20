@@ -64,7 +64,7 @@
     
 
     <!-- load Ink's CSS -->
-    <link rel="stylesheet" href="/assets/vendor/ink-flex.min.css">
+<!--    <link rel="stylesheet" href="/assets/vendor/ink-flex.min.css">-->
 
     <!-- load Ink's css for IE8 and below -->
     <!--[if lt IE 9 ]>
@@ -73,8 +73,6 @@
 
     <!-- load custom CSS -->
     <link rel="stylesheet" href="/assets/vt-style.css">
-    <link rel="canonical" href="http://vteixeira.com/">
-
     <!-- test browser flexbox support and load legacy grid if unsupported -->
     <script type="text/javascript" src="http://cdn.ink.sapo.pt/3.1.7/js/modernizr.js"></script>
     <script type="text/javascript">
@@ -122,27 +120,37 @@
                     <p class="hide-small hide-tiny icon vticon-vt-logo"></p>
                     <h1 class="fw-400">V&iacute;tor Teixeira</h1>
                     <p class="tiny-vertical-space small-vertical-space punch">User Experience Professional</p>
-                    <a class="hide-small hide-tiny align-center scroll scroll-btn" href="#about">Find more about me below</a>
+                    <a class="hide-small hide-tiny align-center scroll-btn ink-smooth-scroll" data-margin="60.8" href="#about">Find more about me below</a>
                 </div>
             </div>
         </div>
     </div>    
 </section>
 
-    <div class="top-menu" id="top-menu">
+    <div class="top-menu ink-sticky" id="top-menu">
         <nav class="ink-navigation ink-grid">
             <ul class="menu horizontal">
-                <li class="xlarge-push-left"><a href=" #top " title="Back to start" class="scroll logo-placeholder"><i class="icon vticon-vt-logo"></i> <span class="hide-small hide-tiny">Vítor Teixeira</span></a></li>
+                <li class="xlarge-push-left"><a href=" #top " title="Back to start" class="logo-placeholder ink-smooth-scroll"><i class="icon vticon-vt-logo"></i> <span class="hide-medium hide-small hide-tiny">Vítor Teixeira</span></a></li>
                 <li class="sections-container">
                     <ul class="push-right navigation">
                         <li>
-                            <a href=" #about " class="" title="Who is Vítor Teixeira">About<span class="hide-small hide-tiny"> Me</span></a>
+                            <a href="#about" class="ink-smooth-scroll" data-margin="60.8" title="Who is Vítor Teixeira">About<span class="hide-small hide-tiny"> Me</span></a>
                         </li>
+<!--
                         <li>
-                            <a href=" #what-i-do " class="" title="What I Do">What I Do</a>
+                            <a href="#work" class="ink-smooth-scroll" data-margin="60.8" title="Latest Projects">Work</a>
                         </li>
+-->
                         <li>
-                            <a href=" #contact " class="" title="Get in touch with me">Contact<span class="hide-small hide-tiny"> Me</span></a>
+                            <a href="#what-i-do" class="ink-smooth-scroll" data-margin="60.8" title="Preferred Methodologies for User Experience Design">What I Do</a>
+                        </li>
+
+                        <li class="hide-tiny hide-small">
+                            <a href="#toolkit" class="ink-smooth-scroll" data-margin="60.8" title="Tools and Languages">Tools</a>
+                        </li>
+
+                        <li>
+                            <a href="#contact" class="ink-smooth-scroll" data-margin="60.8" title="Get in touch with me">Contact<span class="hide-small hide-tiny"> Me</span></a>
                         </li>
                     </ul>
                 </li>
@@ -153,32 +161,104 @@
 </header>
 
 
-        <div class="content-drawer">
-            <section class="scrollto about-me" id="about">
+        <main class="content-drawer" role="main">
+            <section class="about-me" id="about">
     <div class="ink-grid">
         <h1 class="align-center">About me</h1>
 
         <div class="column-group push-top" id="more-about-me">
 
             <div class="xlarge-80 large-80 medium-100 small-100 tiny-100 push-center">
-
-<!--                <div class="xlarge-80 large-80 medium-90 small-100 tiny-100 push-center">-->
                     <p class="about-me-punch">I'm a User Experience Professional with a passion for solving problems using smart, and simple, User-Centered Design.</p>
 
                     <p class="about-me-text">Currently I live in <a href="https://goo.gl/maps/n602z" target="_blank">Lisbon</a> and work for <a href="http://about.sapo.pt" target="_blank">SAPO</a> in the <a href="http://ux.sapo.pt/equipa" target="_blank"><abbr title="User Experience">UX</abbr> Team</a>. Before, I worked for Microsoft as a Researcher in the <a href="http://www.microsoft.com/pt-pt/mldc/default.aspx" target="_blank">Microsoft Language Development Center</a>, working in projects like <a href="http://www.microsoft.com/pt-pt/mldc/lul/en/default.aspx" target="_blank">Living Usability Lab</a> and <a href="http://www.aal4all.org/" target="_blank"><abbr title="Ambient Assisted Living">AAL</abbr>4ALL</a>.</p>
                     <p class="about-me-text">After work I'm an avid reader, movies and tv shows addict, and sort of a handyman. Oh, and a proud dog owner too!</p>
-                    <p class="about-me-text">Find more about <a href="#what-i-do" class="scroll" title="Go to what I do section">what I do</a> below. Feel free to <a href="#contact" class="scroll" title="Go to contact form">drop me a line</a> if you have any questions, comments, or would just like to say hello.</p>
-                    <p class="about-me-secondary">Also, make sure to check out my <a href="https://www.linkedin.com/in/vsdteixeira" title="Linkedin profile" target="_blank">LinkedIn profile</a> if you are interested in the companies and projects I have worked on.</p>
+                    <p class="about-me-text">Find more about <a href="#what-i-do" class="ink-smooth-scroll" title="Go to what I do section">what I do</a> below. Feel free to <a href="#contact" class="ink-smooth-scroll" title="Go to contact form">drop me a line</a> if you have any questions, comments, or would just like to say hello.</p>
+                    <p class="about-me-secondary">Also, make sure to <a href="https://www.linkedin.com/in/vsdteixeira" title="Linkedin profile" target="_blank">check out my LinkedIn profile</a> if you are interested in the companies and projects I have worked on.</p>
                 </div>
-<!--            </div>-->
         </div>
     </div>
 </section> <!-- End of About Me section-->
-<section class="scrollto what-i-do" id="what-i-do">
+<!--<section class="work" id="work">
     <div class="ink-grid">
 
-        <h1 class="align-center">What I Do</h1>
-<p class="align-center bottom-space what-i-do-intro">Here are some of my User-Centered Design methods of choice</p>
+        <h1 class="align-center half-bottom-space">Some of my work</h1>
+
+        <div class="column-group gutters push-center">
+
+
+            <div class="xlarge-80 large-80 medium-100 small-100 tiny-100 push-center align-center">
+
+                <div class="column-group gutters align-left">
+
+                    
+                    <div class="xlarge-33 large-33 medium-33 small-50 tiny-100">
+                        <article class="post-teaser">    
+                            <a href="/work/2015/03/first-post.html">
+                                <header class="post-title push-center">
+
+                                    
+
+                                    <img src="/img/blog-posts.gif" alt="Living Home Center prototype screen" class="quarter-bottom-space"><span>Case Study</span>
+                                    
+
+                                    <p class="bottom-space align-left small-align-left medium-align-left post-title">Living Home Center</p>
+
+                                </header>
+                            </a>
+                        </article>
+                    </div>
+                    
+                    <div class="xlarge-33 large-33 medium-33 small-50 tiny-100">
+                        <article class="post-teaser">    
+                            <a href="/work/2015/03/first-post.html">
+                                <header class="post-title push-center">
+
+                                    
+
+                                    <img src="/img/work-posts.gif" alt="Living Home Center prototype screen" class="quarter-bottom-space"><span>Case Study</span>
+                                    
+
+                                    <p class="bottom-space align-left small-align-left medium-align-left post-title">Living Home Center</p>
+
+                                </header>
+                            </a>
+                        </article>
+                    </div>
+                    
+                    <div class="xlarge-33 large-33 medium-33 small-50 tiny-100">
+                        <article class="post-teaser">    
+                            <a href="/work/2015/03/first-post.html">
+                                <header class="post-title push-center">
+
+                                    
+
+                                    <img src="/img/blog-posts.gif" alt="Living Home Center prototype screen" class="quarter-bottom-space"><span>Case Study</span>
+                                    
+
+                                    <p class="bottom-space align-left small-align-left medium-align-left post-title">Living Home Center</p>
+
+                                </header>
+                            </a>
+                        </article>
+                    </div>
+                    
+
+                </div>
+
+                
+                
+            </div>
+        </div>
+
+    </div>
+</section>
+-->
+<section class="what-i-do" id="what-i-do">
+    <div class="ink-grid">
+
+        <h1 class="align-center">What I do for a living</h1>
+<p class="align-center double-bottom-space what-i-do-intro">Here are some of my User-Centered Design methods of choice</p>
         <div class="column-group  push-center">
 
             <div class="xlarge-80 large-80 medium-100 small-100 tiny-100">
@@ -236,11 +316,11 @@
     </div>
 </section>
 
-<section class="scrollto toolkit" id="toolkit">
+<section class="toolkit" id="toolkit">
     <div class="ink-grid">
 
-        <h1 class="align-center">Toolkit &amp; Languages</h1>
-        <p class="align-center bottom-space toolkit-intro">Although there are many others, here is a list of some of the tools I'm using nowadays</p>
+        <h1 class="align-center">Toolkit &amp; languages</h1>
+        <p class="align-center double-bottom-space toolkit-intro">Although there are many others, here is a list of some of the tools I'm using nowadays</p>
 
 
         <div class="column-group  push-center">
@@ -273,7 +353,7 @@
                     <div class="all-25 medium-50 small-50 tiny-50 align-center push-top">
                         <a href="http://www.seleniumhq.org/" title="Selenium" target="_blank">
                             <img src="/assets/selenium_logo.png" alt="Selenium Logo">
-                            <p class="half-top-space">Selenium for magic testing</p>
+                            <p class="half-top-space">Selenium for test automation</p>
                         </a>
                     </div>
 
@@ -298,7 +378,7 @@
 
                     <div class="all-25 medium-50 small-50 tiny-50 align-center push-top">
                         <img src="/assets/brain_circuit.png" alt="Representation of a brain made out of circuits">
-                        <p class="half-top-space">My Brains for solving problems ;&#41;</p>
+                        <p class="half-top-space">My Brain for solving problems ;&#41;</p>
                     </div>
 
                 </div>
@@ -309,12 +389,12 @@
     </div>
 </section>
 
-<section class="scrollto contact" id="contact">
+<section class="contact" id="contact">
     <div class="ink-grid">
         <div class="column-group">
             <div class="xlarge-80 large-80 all-100 push-center">
                 <h1 class="align-center half-bottom-space">Get in touch</h1>
-                <p class="align-center contact-prompt">In need of some <abbr title="User Experience">UX</abbr> advice? Or maybe you just want to know what I’m up to. Either way, let’s keep in touch</p>
+                <p class="align-center contact-prompt double-bottom-space">In need of some <abbr title="User Experience">UX</abbr> advice? Or maybe you just want to know what I’m up to. Either way, let’s keep in touch</p>
                 <form class="ink-form contact-form" role="form" method="POST" action="http://formspree.io/vsdteixeira@gmail.com">
 
                     <input type="hidden" name="_next" value="/thanks" />
@@ -329,11 +409,6 @@
                             <label for="form-email">E-Mail<abbr class="required-mark" title="* This field is required."> *</abbr></label>
                             <div class="control half-bottom-space">
                                 <input id="form-email" name="_replyto" type="email" placeholder="Your e-mail address" required>
-                            </div>
-
-                            <label for="form-phone">Phone Number</label>
-                            <div class="control half-bottom-space">
-                                <input id="form-phone" name="phone" type="tel" placeholder="Your phone number">
                             </div>
                         </div>
 
@@ -360,7 +435,7 @@
 
 
 
-        </div>
+        </main>
 
         <footer class="clearfix">
     <div class="ink-grid">
