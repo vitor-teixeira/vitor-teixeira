@@ -1,16 +1,11 @@
-.blog{
-    background-color: $blog-bg-color;
+.work{
+    background-color: $even-section-bg-color;
 
     h1{
         color: $brand-color;
     }
-
-
-    .tobedone-text{
-        font-weight: 400;
-    }
-
-    .blog-teaser {
+    
+    .post-teaser {
 
         img{
             @include dashed-border(1em, 3px, #fff);
@@ -18,7 +13,7 @@
 
         p{
             font-family: $title-face;
-            font-size: 1.625em;
+            font-size: 1.5em;
         }
     }
 
@@ -26,9 +21,6 @@
     a:hover, a:focus {
         img{
             border-color: $hover-link-color;
-        }
-
-        p, .read-more{
         }
     }
 }

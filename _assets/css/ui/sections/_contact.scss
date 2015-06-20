@@ -11,7 +11,7 @@
         font-size: 1.5em;
 
 
-        @media only screen and (max-width: 37.813em) {
+        @media only screen and (max-width: 40em) {
             font-size: 1.1em;
         }
     }
@@ -29,8 +29,8 @@
 
         input, textarea {
             background-color: $dark-on-dark-bg-color;
-            border: none;
-            color: $secondary-text-color;
+            border: 1px solid $dark-on-dark-bg-color;
+            color: $dark-bg-text-color;
             -moz-transition: all 0.2s linear;
             -ms-transition: all 0.2s linear;
             -o-transition: all 0.2s linear;
@@ -40,15 +40,15 @@
         input:focus,
         textarea:focus {
             border: 1px solid $brand-color;
-            color: $dark-bg-text-color;
-            box-shadow: none;
+            color: $dark-text-color;
+            background: #FFF none repeat scroll 0% 0%;
             outline: none;
         }
 
         textarea{
             resize: vertical;
             @media only screen and (min-width: 960px) {
-                min-height: 13.7em
+                min-height: 8.05em
             }
         }
 
@@ -64,7 +64,8 @@
 
             &:hover,
             &:focus {	
-                background: $dark-on-dark-bg-color;
+                background: $brand-color;
+                color: $dark-bg-text-color;
             }
         }
 

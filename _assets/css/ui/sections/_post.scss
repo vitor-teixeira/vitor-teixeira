@@ -1,7 +1,13 @@
 .post-header{
     padding-top: 0em;
+    
+    h1{
+        text-transform: capitalize;
+    }
 }
 
-.post-date{
-    text-transform: uppercase;
+.post-meta{
+    color: $post-meta-text-color;
+    color: #999;
+    font-weight: 300;
 }

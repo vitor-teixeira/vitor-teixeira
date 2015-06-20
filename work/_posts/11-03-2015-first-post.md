@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "Welcome to my new site!"
-date:   08-03-2015
-img: /img/blog-posts.gif
-img-alt-text: "Alt text here"
-categories: blog
+title:  "Living Home Center"
+date:   11-03-2015
+author: "V&iacute;tor Teixeira"
+thumb: /img/blog-posts.gif
+thumb-alt-text: "Living Home Center prototype screen"
+tags: ['Case Study']
 ---
 
 

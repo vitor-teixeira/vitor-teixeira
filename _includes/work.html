@@ -1,0 +1,45 @@
+<section class="work" id="work">
+    <div class="ink-grid">
+
+        <h1 class="align-center half-bottom-space">Some of my work</h1>
+
+        <div class="column-group gutters push-center">
+
+
+            <div class="xlarge-80 large-80 medium-100 small-100 tiny-100 push-center align-center">
+
+                <div class="column-group gutters align-left">
+
+                    {% for post in site.posts limit: 3 %}
+                    <div class="xlarge-33 large-33 medium-33 small-50 tiny-100">
+                        <article class="post-teaser">    
+                            <a href="{{ BASE_PATH }}{{ post.url }}">
+                                <header class="post-title push-center">
+
+                                    {% if post.thumb%}
+
+                                    <img src="{{post.thumb}}" alt="{{post.thumb-alt-text}}" class="quarter-bottom-space"><span>{{ post.tags[0] }}</span>
+                                    {% endif %}
+
+                                    <p class="bottom-space align-left small-align-left medium-align-left post-title">{{ post.title }}</p>
+
+                                </header>
+                            </a>
+                        </article>
+                    </div>
+                    {% endfor %}
+
+                </div>
+
+                {% capture difference %}{{ site.posts | size | minus:4 }}{% endcapture %}
+                {% unless difference contains '-' %}           
+                <div class="column-groupalign-center">
+
+                    <a href="/work" class="align-center">Checkout my previous posts</a>
+                </div>
+                {% endunless %}
+            </div>
+        </div>
+
+    </div>
+</section>

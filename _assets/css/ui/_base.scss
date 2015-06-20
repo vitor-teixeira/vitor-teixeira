@@ -9,6 +9,9 @@ html, body{
 // Headings
 // ------------------------------------------------------------------
 h1{
+    @media only screen and (max-width: 40em) {
+        font-size: 1.8125em;
+    }
     font-size: 2.8125em;
     font-family: $title-face;
     font-weight: 400;
