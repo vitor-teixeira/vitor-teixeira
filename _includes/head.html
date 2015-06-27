@@ -46,6 +46,9 @@
     <meta content="/img/posts/{{ page.image }}" property="og:image">
     {% else %}
     <meta content="{{ site.url }}{% asset_path fbshare.jpg %}" property="og:image">
+    <meta property="og:image:type" content="image/jpeg"> 
+    <meta property="og:image:width" content="1200"> 
+    <meta property="og:image:height" content="650">
     {% endif %}
     {% if page.categories %}
     {% for category in page.categories limit:1 %}
