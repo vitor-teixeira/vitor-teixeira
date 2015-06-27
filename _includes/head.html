@@ -45,7 +45,7 @@
     {% if page.image %}
     <meta content="/img/posts/{{ page.image }}" property="og:image">
     {% else %}
-    <meta content="{{ site.url }}{% asset_path header-bg.jpg %}" property="og:image">
+    <meta content="{{ site.url }}{% asset_path fbshare.jpg %}" property="og:image">
     {% endif %}
     {% if page.categories %}
     {% for category in page.categories limit:1 %}
@@ -79,19 +79,18 @@
     {% if page.image %}
     <meta name="twitter:image:src" content="{{ site.url }}{% asset_path%}{{ page.image }}">
     {% else %}
-    <meta name="twitter:image:src" content="{{ site.url }}{% asset_path header-bg.jpg %}">
+    <meta name="twitter:image:src" content="{{ site.url }}{% asset_path fbshare.jpg %}">
     {% endif %}
 
-    <!-- load Ink's CSS -->
-<!--    {% stylesheet vendor/ink-flex.min.css %}-->
+
+    <!-- load INK and custom CSS -->
+    {% stylesheet vt-style %}
 
     <!-- load Ink's css for IE8 and below -->
     <!--[if lt IE 9 ]>
 <link rel="stylesheet" href="http://cdn.ink.sapo.pt/3.1.7/css/ink-ie.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
 <![endif]-->
 
-    <!-- load custom CSS -->
-    {% stylesheet vt-style %}
     <!-- test browser flexbox support and load legacy grid if unsupported -->
     <script type="text/javascript" src="http://cdn.ink.sapo.pt/3.1.7/js/modernizr.js"></script>
     <script type="text/javascript">
