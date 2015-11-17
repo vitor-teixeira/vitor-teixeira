@@ -6,9 +6,83 @@
 </description>
     <link>http://vteixeira.com/</link>
     <atom:link href="http://vteixeira.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 08 Oct 2015 14:39:54 +0100</pubDate>
-    <lastBuildDate>Thu, 08 Oct 2015 14:39:54 +0100</lastBuildDate>
+    <pubDate>Tue, 17 Nov 2015 18:39:12 +0000</pubDate>
+    <lastBuildDate>Tue, 17 Nov 2015 18:39:12 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>SAPO MAG</title>
+        <description>&lt;p&gt;Check out &lt;a href=&quot;http://mag.sapo.pt&quot; target=&quot;_blank&quot;&gt;SAPO MAG&lt;/a&gt; and enjoy.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 24 Oct 2015 00:00:00 +0100</pubDate>
+        <link>http://vteixeira.com/work/sapo-mag.html</link>
+        <guid isPermaLink="true">http://vteixeira.com/work/sapo-mag.html</guid>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>SAPO BIZ</title>
+        <description>&lt;p&gt;Check out &lt;a href=&quot;http://biz.sapo.pt&quot; target=&quot;_blank&quot;&gt;SAPO BIZ&lt;/a&gt; and enjoy.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 23 Oct 2015 00:00:00 +0100</pubDate>
+        <link>http://vteixeira.com/work/sapo-biz.html</link>
+        <guid isPermaLink="true">http://vteixeira.com/work/sapo-biz.html</guid>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>SAPO BLOGS</title>
+        <description>&lt;p&gt;SAPO Blogs is the platform that provides visibility to Portuguese-speaking blogs. Your first post doesn’t need to be a “message in a bottle”.&lt;/p&gt;
+
+&lt;h2 id=&quot;roles&quot;&gt;Roles&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Requirements and Specification&lt;/li&gt;
+  &lt;li&gt;Sketches and Wireframes&lt;/li&gt;
+  &lt;li&gt;Information Architecture&lt;/li&gt;
+  &lt;li&gt;Design overview and responsive best practices&lt;/li&gt;
+  &lt;li&gt;User testing&lt;/li&gt;
+  &lt;li&gt;Heuristic evaluation&lt;/li&gt;
+  &lt;li&gt;Quality Assurance&lt;/li&gt;
+  &lt;li&gt;Performance analysis&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;the-result&quot;&gt;The result&lt;/h2&gt;
+
+&lt;p&gt;Check out &lt;a href=&quot;http://blogs.sapo.pt&quot; target=&quot;_blank&quot;&gt;SAPO BLOGS&lt;/a&gt; and enjoy your reading.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 22 Oct 2015 00:00:00 +0100</pubDate>
+        <link>http://vteixeira.com/work/sapo-blogs.html</link>
+        <guid isPermaLink="true">http://vteixeira.com/work/sapo-blogs.html</guid>
+        
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>SAPO V&amp;Iacute;DEOS</title>
+        <description>&lt;!--Recently its interface was redesigned to simplify the interaction and improve presentation of content. The interface reserved to registered users also went through a major overall to simplify the process of uploading and managing video libraries. It&#39;s now also possible to use the website with any device.&quot;--&gt;
+
+&lt;p&gt;Check out &lt;a href=&quot;http://videos.sapo.pt&quot; target=&quot;_blank&quot;&gt;SAPO Vídeos&lt;/a&gt; and enjoy.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 21 Oct 2015 00:00:00 +0100</pubDate>
+        <link>http://vteixeira.com/work/sapo-videos.html</link>
+        <guid isPermaLink="true">http://vteixeira.com/work/sapo-videos.html</guid>
+        
+        
+        <category>work</category>
+        
+      </item>
     
   </channel>
 </rss>
