@@ -2,21 +2,46 @@
     background-color: $even-section-bg-color;
 
     h1{
-        color: $brand-color;
+        color: $dark-title-color;
+        margin-bottom: 0.2em;
     }
-    
+
+    .work-intro{
+        font-size: 1.5em;
+
+        @media only screen and (max-width: 40em) {
+            font-size: 1.1em;
+        }
+    }
+
     .post-teaser {
 
         img{
-            @include dashed-border(1em, 3px, #fff);
+            // @include dashed-border(1em, 3px, #fff);
+            padding: 0.5em;
+            background: #fff;
         }
 
         p{
             font-family: $title-face;
             font-size: 1.5em;
+
+            @media only screen and (max-width: 60em) {
+                font-size: 1.2em;
+            }
         }
     }
 
+    .work-post:last-child, .work-post:last-child p{
+        margin-bottom: 0;
+    }
+
+
+    .work-post:nth-last-child(2),.work-post:nth-last-child(2) p{
+        @media only screen and (min-width: 40em) {
+            margin-bottom: 0;
+        }
+    }
 
     a:hover, a:focus {
         img{

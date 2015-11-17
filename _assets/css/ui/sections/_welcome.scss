@@ -1,10 +1,11 @@
 // ===========================================
 // WELCOME SECTION
 // ===========================================
-.welcome{
+.content-drawer section.welcome{
 
     height: 600px;
-    height: 100vh;
+    height: 70vh;
+    padding: 0;
 
     @media only screen and (max-width: 45em) {
         height: 300px;
@@ -14,7 +15,7 @@
     }
 
     @media only screen and (min-width: 45em) {
-        background-image: url(asset_path('header-bg@3X.jpg'));
+        background-image: url(asset_path('header-bg-short.jpg'));
         background-size: cover;
         background-position: right bottom;    
     }

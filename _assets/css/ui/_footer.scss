@@ -1,7 +1,7 @@
 footer{
     background-color: $footer-bg-color;
     padding: 3.5em 0;
-    .mailto{
+    .social-intro{
         color: $footer-text-color;
         font-size: 1.25em;
 
@@ -72,6 +72,8 @@ footer{
         }
         
         a{
+            color: lighten($brand-color, 10%);
+            
             &:hover,
             &:focus{
                 text-decoration: none;

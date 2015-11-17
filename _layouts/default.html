@@ -3,16 +3,19 @@
 
     {% include head.html %}
 
-    <body>
+    <body class="ink-drawer">
+        {% include drawer.html %}
+        
+        <div class="content-drawer">
+            {% include header.html %}
 
-        {% include header.html %}
+            <main class="" role="main"> <!-- ex content-drawer -->
+                {{ content }}
+            </main>
 
-        <main class="content-drawer" role="main">
-            {{ content }}
-        </main>
-
-        {% include footer.html %}
-        {% include js.html %}
+            {% include footer.html %}
+            {% include js.html %}
+        </div>
     </body>
 
 </html>

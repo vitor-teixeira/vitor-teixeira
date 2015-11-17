@@ -44,7 +44,7 @@
     <meta content="{{ site.url }}" property="article:author">
     {% endif %}
     {% if page.image %}
-    <meta content="/img/posts/{{ page.image }}" property="og:image">
+    <meta content="{{ site.url }}{{ page.image }}" property="og:image">
     {% else %}
     <meta content="{{ site.url }}{% asset_path fbshare.jpg %}" property="og:image">
     <meta property="og:image:type" content="image/jpeg"> 
@@ -81,7 +81,7 @@
     <meta name="twitter:description" content="{{ site.description }}">
     {% endif %}
     {% if page.image %}
-    <meta name="twitter:image:src" content="{{ site.url }}{% asset_path%}{{ page.image }}">
+    <meta name="twitter:image:src" content="{{ site.url }}{{ page.image }}">
     {% else %}
     <meta name="twitter:image:src" content="{{ site.url }}{% asset_path fbshare.jpg %}">
     {% endif %}

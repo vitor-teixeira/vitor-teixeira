@@ -8,22 +8,20 @@ layout: default
             <div class="xlarge-60 large-60 medium-80 small-100 tiny-100">
 
                 <article class="blog-post bottom-space post-content">
-
-                    <!--if page.hero-image-->
-                    {% if page.hero-image%}
-                    <figure class="post-hero">
-                        <img src="{{page.hero-image}}" alt="{{page.hero-image-alt}}">
-                    </figure>
-                    {% endif %}
-
                     <header class="post-header">
                         <div class="blog-title">
                             <h1 class="align-center post-title">{{page.title}}</h1>
-                            <p class="align-center post-meta"><span>{{page.tags}}</span> - Posted on {{ page.date | date: "%-d<span> </span>%b<span>, </span>%Y"}} by <span>{{page.author}}</span></p>
+                            {% if page.hero-image%}
+                    <figure class="post-hero align-center bottom-space">
+                        <img src="{{page.hero-image}}" alt="{{page.hero-image-alt}}">
+                    </figure>
+                    {% endif %}
+<!--                            <p class="align-center post-meta">Posted on {{ page.date | date: "%-d<span> </span>%b<span>, </span>%Y"}} by <span>{{page.author}}</span></p>-->
                         </div>
                     </header>
 
                     <div class="blog-content">
+                       <p class="intro">{{page.intro}}</p>
                         {{ content }} 
                     </div>
 

@@ -1,0 +1,79 @@
+---
+layout: default
+---
+
+<section class="main">
+    <div class="ink-grid work-post">
+        <div class="column-group push-center">
+            <div class="xlarge-100 large-100 medium-100 small-100 tiny-100">
+
+                <article class="blog-post bottom-space post-content">
+                    <header class="post-header">
+                        <div class="blog-title">
+                            <h1 class="align-center post-title">{{page.title}}</h1>
+                        </div>
+                    </header>
+
+                    <div class="blog-content">
+
+
+
+                        <div class="column-group gutters">
+                            <div class="xlarge-60 large-60 medium-80 small-100 tiny-100 align-center">
+                                <p class="intro">{{page.intro}}</p>
+                            </div>
+                        </div>
+
+
+                        <div class="column-group gutters">
+                            <div class="xlarge-40 large-40 medium-100 small-100 tiny-100">
+
+                                {{ content }} 
+                            </div>
+
+                            <div class="xlarge-60 large-60 medium-100 small-100 tiny-100">
+                                {% if page.wire-image%}
+                                <figure class="align-center bottom-space">
+                                    <img src="{{page.wire-image}}" alt="{{page.wire-image-alt}}">
+                                </figure>
+                                {% endif %}
+                                {% if page.final-image%}
+                                <figure class="align-center bottom-space">
+                                    <img src="{{page.wire-image}}" alt="{{page.wire-image-alt}}">
+                                </figure>
+                                {% endif %}
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <footer class="article-navigation double-top-space">
+                        {% if page.previous.url %}
+                        <a href="{{page.previous.url}}" class="prev push-left">
+                            <header>
+                                {% if page.previous.thumb%}
+                                <p class="post-title quarter-bottom-space">&larr; Read about {{page.previous.title}}</p>
+                                <img src="{{page.previous.thumb}}" alt="{{page.previous.thumb-alt-text}}" class="project-thumb"><span>{{ post.tags[0] }}</span>
+                                {% endif %}
+                            </header>
+                        </a>
+                        {% endif %}
+
+                        {% if page.next.url %}
+                        <a href="{{page.next.url}}" class="next push-right">
+                            <header>
+                                {% if page.next.thumb%}
+                                <p class="post-title quarter-bottom-space align-right">Read about {{page.next.title}} &rarr;</p>
+                                <img src="{{page.next.thumb}}" alt="{{page.next.thumb-alt-text}}" class="project-thumb"><span>{{ post.tags[0] }}</span>
+                                {% endif %}
+                            </header>
+                        </a>
+                        {% endif %}
+                    </footer>
+                </article>
+
+            </div>
+        </div>
+    </div>
+</section>
