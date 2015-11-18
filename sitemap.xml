@@ -1,28 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://vteixeira.com/work/sapo-mag.html</loc>
-    <lastmod>2015-10-24T00:00:00+01:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://vteixeira.com/work/sapo-biz.html</loc>
-    <lastmod>2015-10-23T00:00:00+01:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://vteixeira.com/work/sapo-blogs.html</loc>
-    <lastmod>2015-10-22T00:00:00+01:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://vteixeira.com/work/sapo-videos.html</loc>
-    <lastmod>2015-10-21T00:00:00+01:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>http://vteixeira.com/</loc>
-    <lastmod>2015-11-17T18:39:12+00:00</lastmod>
+    <lastmod>2015-11-18T10:02:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
