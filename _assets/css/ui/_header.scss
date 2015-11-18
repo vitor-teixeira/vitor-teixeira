@@ -18,8 +18,10 @@
         text-decoration: none;
 
     }
+}
 
-
+body.ink-drawer .right-drawer{
+    z-index: 100;
 }
 
 // ===========================================
