@@ -17,14 +17,13 @@ Ink.requireModules( ['Ink.Dom.Selector_1','Ink.UI.Spy_1','Ink.UI.Sticky_1','Ink.
     }
 
     // Make the navbar stick to the top
-    new Sticky('#top-menu', { activateInLayouts: ['medium', 'large', 'xlarge'] });
-
-
+    new Sticky('#top-menu', { activateInLayouts: ['tiny', 'small','medium', 'large', 'xlarge'] });
 
     // Smooth Scroll for homepage sections
     SmoothScroller.init();
     SmoothScroller.changeHash=true;
     SmoothScroller.speed=10;
 
+    // Create instance of the drawer menu. For small screens navigation
     new Drawer();
 });

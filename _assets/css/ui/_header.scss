@@ -4,12 +4,22 @@
 
 .drawer-menu{
     background: $brand-color;
-    padding-top: 36px;
 
     ul.menu.vertical li a{
         color: $dark-bg-text-color;
         text-transform: uppercase;
+        
+        &:focus{
+            outline: 0;
+        }
     }
+
+    ul.menu.vertical li.active a{
+        text-decoration: none;
+
+    }
+
+
 }
 
 // ===========================================
