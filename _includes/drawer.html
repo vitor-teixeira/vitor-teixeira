@@ -1,4 +1,7 @@
-<nav class="ink-navigation drawer-menu right-drawer">
+<nav id="drawer-menu" class="ink-navigation drawer-menu right-drawer">
+    <div class="align-right">
+        <button id="close-drawer" class="close-menu half-top-space half-bottom-space half-right-space">&times;</button>
+    </div>
     <ul class="menu vertical">
         <li>
             <a href="{% if page.url == '/index.html' %}#about{% else %} /#about {% endif %}" tabindex="-1" class="ink-smooth-scroll" data-margin="60.8" title="Who is Vítor Teixeira">About</a>
@@ -20,5 +23,4 @@
             <a href="{% if page.url == '/index.html' %}#contact{% else %} /#contact {% endif %}" class="ink-smooth-scroll" data-margin="60.8" title="Get in touch with me">Contacts</a>
         </li>
     </ul>
-
 </nav>

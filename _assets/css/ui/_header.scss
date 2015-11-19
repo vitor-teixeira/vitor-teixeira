@@ -4,11 +4,17 @@
 
 .drawer-menu{
     background: $brand-color;
+    box-shadow: -2px 0px 10px 0px rgba(0, 0, 0, 0.4);
+
+    ul.menu.vertical li{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    }
 
     ul.menu.vertical li a{
         color: $dark-bg-text-color;
         text-transform: uppercase;
-        
+        border-bottom: 0;
+
         &:focus{
             outline: 0;
         }
@@ -16,7 +22,24 @@
 
     ul.menu.vertical li.active a{
         text-decoration: none;
+    }
 
+    button.close-menu{
+        font-size: 1.5em;
+        font-weight: 400;
+        color: $dark-bg-text-color;
+        background: none;
+        border-radius: 4px;
+        border: 1px solid $dark-bg-text-color;
+        padding: 0 0.5em;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {	
+            background: $dark-bg-text-color;
+            color: $brand-color;
+            text-shadow: none;
+        }
     }
 }
 
@@ -112,11 +135,6 @@ body.ink-drawer .right-drawer{
 
                 .icon{
                     font-size: 3em;
-
-                    @media only screen and (max-width: 40em) {
-                        font-size: 2.8em;
-                        line-height: 0;
-                    }
                 }
                 span{
                     font-size: 1.2em;
@@ -131,7 +149,13 @@ body.ink-drawer .right-drawer{
                 }
 
                 @media only screen and (max-width: 40em) {
-                    padding: 0.5em 0em;
+                    padding-left: 0em;
+
+                    &:hover,
+                    &:focus{
+                        background: none;
+                    }
+
                 }
             }
         }

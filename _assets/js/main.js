@@ -5,8 +5,7 @@
 //= require vendor/ink/ink.smoothscroller.js
 //= require vendor/ink/ink.drawer.js
 
-
-Ink.requireModules( ['Ink.Dom.Selector_1','Ink.UI.Spy_1','Ink.UI.Sticky_1','Ink.UI.SmoothScroller_1', 'Ink.UI.Drawer_1'], function( Selector, Spy, Sticky, SmoothScroller, Drawer ){
+Ink.requireModules( ['Ink.Dom.Selector_1','Ink.UI.Spy_1','Ink.UI.Sticky_1','Ink.UI.SmoothScroller_1', 'Ink.UI.Drawer_1', 'Ink.Dom.Event_1','Ink.Dom.Css_1'], function( Selector, Spy, Sticky, SmoothScroller, Drawer, InkEvent, InkCss ){
 
     // Get current section and highlight it in the navbar
     var Menu = Ink.i('top-menu');
@@ -25,5 +24,12 @@ Ink.requireModules( ['Ink.Dom.Selector_1','Ink.UI.Spy_1','Ink.UI.Sticky_1','Ink.
     SmoothScroller.speed=10;
 
     // Create instance of the drawer menu. For small screens navigation
-    new Drawer();
+    var drawer = new Drawer();
+
+    //Hide the drawer menu on button click
+    var closeButton = Ink.i('close-drawer');
+
+    InkEvent.observe(closeButton, 'click', function(event) {
+        drawer.close();
+    });
 });
