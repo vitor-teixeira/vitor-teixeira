@@ -152,7 +152,8 @@ body.ink-drawer .right-drawer{
                     padding-left: 0em;
 
                     &:hover,
-                    &:focus{
+                    &:focus,
+                    &:active{
                         background: none;
                     }
 
