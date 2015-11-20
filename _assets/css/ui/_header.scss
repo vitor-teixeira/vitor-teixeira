@@ -152,8 +152,7 @@ body.ink-drawer .right-drawer{
                     padding-left: 0em;
 
                     &:hover,
-                    &:focus,
-                    &:active{
+                    &:focus,{
                         background: none;
                     }
 
@@ -165,12 +164,19 @@ body.ink-drawer .right-drawer{
         .active {
             text-decoration: none;
             background: #18b295;
-            //            font-weight: 400;
             -webkit-transform: translate3d(0, 0, 0);
             -moz-transform: translate3d(0, 0, 0);
             -o-transform: translate3d(0, 0, 0);
             -ms-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
+
+            @media only screen and (max-width: 40em) {
+                &:hover,
+                &:focus,{
+                    background: none;
+                }
+
+            }
         }
     }
 
