@@ -17,12 +17,16 @@
     <link rel="apple-touch-icon" sizes="120x120" href="{% asset_path apple-icon-120x120.png %}">
     <link rel="apple-touch-icon" sizes="152x152" href="{% asset_path apple-icon-152x152.png %}">
 
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% else %}
     <meta name="description" content="{{ site.description }}">
+    {% endif %}
 
     <!-- Open Graph Tags  -->
     <meta content="{{ site.title }}" property="og:site_name">
     {% if page.title %}
-    <meta content="{{ page.title }}" property="og:title">
+    <meta content="{{ page.title }} | {{ site.title }}" property="og:title">
     {% else %}
     <meta content="{{ site.title }}" property="og:title">
     {% endif %}
