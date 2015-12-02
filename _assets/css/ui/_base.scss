@@ -23,6 +23,12 @@ h2{
     color: $brand-color;
 }
 
+h3{
+    font-size: 1.3em;
+    color: $dark-title-color;
+    text-transform: uppercase;
+}
+
 // ------------------------------------------------------------------
 // Paragraphs
 // ------------------------------------------------------------------
@@ -34,7 +40,7 @@ p {
     }
 
     @media only screen and (min-width: 60em) {
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
 }
 

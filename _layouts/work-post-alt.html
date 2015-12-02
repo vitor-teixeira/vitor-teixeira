@@ -5,7 +5,7 @@ layout: default
 <section class="main">
     <div class="ink-grid work-post">
         <div class="column-group push-center">
-            <div class="xlarge-100 large-100 medium-100 small-100 tiny-100">
+            <div class="xlarge-80 large-80 medium-100 small-100 tiny-100">
 
                 <article class="blog-post bottom-space post-content">
                     <header class="post-header">
@@ -19,8 +19,8 @@ layout: default
 
 
                         <div class="column-group gutters">
-                            <div class="xlarge-60 large-60 medium-80 small-100 tiny-100 align-center">
-                                <p class="intro">{{page.intro}}</p>
+                            <div class="xlarge-70 large-70 medium-100 small-100 tiny-100 push-center">
+                                <p class="intro align-center">{{page.description}}</p>
                             </div>
                         </div>
 
@@ -39,7 +39,7 @@ layout: default
                                 {% endif %}
                                 {% if page.final-image%}
                                 <figure class="align-center bottom-space">
-                                    <img src="{{page.wire-image}}" alt="{{page.wire-image-alt}}">
+                                    <img src="{{page.final-image}}" alt="{{page.final-image-alt}}">
                                 </figure>
                                 {% endif %}
                             </div>
@@ -48,31 +48,34 @@ layout: default
 
                     </div>
 
-                    <footer class="article-navigation double-top-space">
-                        {% if page.previous.url %}
-                        <a href="{{page.previous.url}}" class="prev push-left">
-                            <header>
-                                {% if page.previous.thumb%}
-                                <p class="post-title quarter-bottom-space">&larr; Read about {{page.previous.title}}</p>
-                                <img src="{{page.previous.thumb}}" alt="{{page.previous.thumb-alt-text}}" class="project-thumb"><span>{{ post.tags[0] }}</span>
-                                {% endif %}
-                            </header>
-                        </a>
-                        {% endif %}
+                    <footer class="article-navigation top-space">
+                       <h3 class="more-projects-title">Other projects</h3>
+                        <div class="push-center align-center">
+                            <div class="column-group gutters">
+                                {% for post in site.categories['work'] limit: 4 %}
 
-                        {% if page.next.url %}
-                        <a href="{{page.next.url}}" class="next push-right">
-                            <header>
-                                {% if page.next.thumb%}
-                                <p class="post-title quarter-bottom-space align-right">Read about {{page.next.title}} &rarr;</p>
-                                <img src="{{page.next.thumb}}" alt="{{page.next.thumb-alt-text}}" class="project-thumb"><span>{{ post.tags[0] }}</span>
+                                {% if post.url != page.url %}
+                                <div class="xlarge-25 large-25 medium-25 small-50 tiny-50 work-post">
+                                    <article class="post-teaser">    
+                                        <a href="{{ BASE_PATH }}{{ post.url }}">
+                                            <header class="post-title push-center">
+
+                                                {% if post.thumb%}
+                                                <img src="{{post.thumb}}" alt="{{post.thumb-alt-text}}" class="half-bottom-space"><span>{{ post.tags[0] }}</span>
+                                                {% endif %}
+
+                                                <p class="post-title">{{ post.title }}</p>
+
+                                            </header>
+                                        </a>
+                                    </article>
+                                </div>
                                 {% endif %}
-                            </header>
-                        </a>
-                        {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
                     </footer>
                 </article>
-
             </div>
         </div>
     </div>
