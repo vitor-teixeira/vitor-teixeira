@@ -30,15 +30,15 @@
                     </div>
                     {% endfor %}
 
+                    <div class="xlarge-80 large-80 all-100 push-center align-center">
+                        {% capture difference %}{{ site.categories['work'] | size | minus:5 }}{% endcapture %}
+                        {% unless difference contains '-' %}           
+                        <a href="/work" class="align-center action-btn">Have a look at some more projects</a>
+                        {% endunless %}
+                    </div>
                 </div>
 
-                {% capture difference %}{{ site.categories['work'] | size | minus:5 }}{% endcapture %}
-                {% unless difference contains '-' %}           
-                <div class="column-group align-center">
 
-                    <a href="/work" class="align-center">Checkout more projects</a>
-                </div>
-                {% endunless %}
             </div>
         </div>
 

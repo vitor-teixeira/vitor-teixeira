@@ -16,7 +16,7 @@ title: Work Posts archive
 
                 <div class="column-group gutters">
 
-                    {% for post in site.categories['work'] limit: 4 %}
+                    {% for post in site.categories['work'] %}
                     <div class="xlarge-50 large-50 medium-50 small-100 tiny-100 work-post">
                         <article class="post-teaser">    
                             <a href="{{ BASE_PATH }}{{ post.url }}">
@@ -36,20 +36,10 @@ title: Work Posts archive
                     {% endfor %}
 
                 </div>
-
-                {% capture difference %}{{ site.categories['work'] | size | minus:5 }}{% endcapture %}
-                {% unless difference contains '-' %}           
-                <div class="column-group align-center">
-
-                    <a href="/work" class="align-center">Checkout more projects</a>
-                </div>
-                {% endunless %}
             </div>
 
 
-            <div class="xlarge-70 large-70 medium-100 small-100 tiny-100 push-center align-center">
-                <p>More to come in the near future. <a href="/">Back to the homepage</a>.</p>
-            </div>
+
         </div>
 
     </div>

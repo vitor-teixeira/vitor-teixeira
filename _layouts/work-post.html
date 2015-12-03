@@ -19,11 +19,6 @@ layout: default
                             </div>
 
                             <div class="all-100 push-center">
-                                {% if page.wire-image%}
-                                <figure class="align-center bottom-space">
-                                    <img src="{{page.wire-image}}" alt="{{page.wire-image-alt}}">
-                                </figure>
-                                {% endif %}
                                 {% if page.final-image%}
                                 <figure class="align-center bottom-space">
                                     <img src="{{page.final-image}}" alt="{{page.final-image-alt}}">
@@ -41,7 +36,7 @@ layout: default
                         <h3 class="more-projects-title">Other projects</h3>
                         <div class="push-center align-center">
                             <div class="column-group gutters">
-                            {% for post in site.categories['work'] limit: 4 %}
+                            {% for post in site.categories['work'] limit: 5 %}
                                 {% if post.url != page.url %}
                                 <div class="xlarge-25 large-25 medium-25 small-50 tiny-50 work-post">
                                     <article class="post-teaser">    

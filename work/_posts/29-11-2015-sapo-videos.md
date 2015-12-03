@@ -5,8 +5,6 @@ date:   29-11-2015
 author: "V&iacute;tor Teixeira"
 thumb: /img/videos_thumb.png
 thumb-alt-text: "SAPO Vídeos screenshot"
-<!--wire-image: /img/mag_hero.jpg-->
-<!--wire-image-alt: hero image description here-->
 final-image: /img/videos_final_multi.png
 final-image-alt: Multiple devices showing SAPO Videos
 description: SAPO Videos is the largest video hosting and sharing platform in Portugal. With the best media partners on board and a thriving community, SAPO Vídeos is the go to website to watch the best portuguese video content.
@@ -14,7 +12,7 @@ description: SAPO Videos is the largest video hosting and sharing platform in Po
 In 2013 we decided to revamp the platform experience, and ever since we have been making some impactful changes both for users and business alike. With most of the videos watched outside the SAPO V&Iacute;deos Website, via embeds and other websites in SAPO's network, we decided to give special attention to the logged experience, since we wanted our users to be able to upload and manage their video libraries in the easiest way possible. It's now also possible to use the website with any modern device, both for watching or managing videos.
 
 
-## Main Tasks
+## Main Responsabilities
 - Requirements gathering in interviews
 - Wireframes, mockups and prototypes development and validation
 - Information Architecture
