@@ -21,14 +21,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>http://vteixeira.com/work/living-usability-lab.html</loc>
+    <lastmod>2015-11-28T00:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://vteixeira.com/work/</loc>
-    <lastmod>2015-12-02T16:39:42+00:00</lastmod>
+    <lastmod>2015-12-03T00:31:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://vteixeira.com/</loc>
-    <lastmod>2015-12-02T16:39:42+00:00</lastmod>
+    <lastmod>2015-12-03T00:31:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
