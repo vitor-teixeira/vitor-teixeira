@@ -5,42 +5,31 @@ title: Work Posts archive
 
 <section class="work" aria-labelledby="workHeading">
     <div class="ink-grid">
-
         <h1 id="workHeading" class="align-center half-bottom-space">Some of my work</h1>
         <p class="align-center bottom-space work-intro">A selection of publicly available projects I recently worked on</p>
-
         <div class="column-group gutters push-center">
-
-
             <div class="xlarge-80 large-80 medium-100 small-100 tiny-100 push-center align-center">
-
                 <div class="column-group gutters">
-
                     {% for post in site.categories['work'] %}
-                    <div class="xlarge-50 large-50 medium-50 small-100 tiny-100 work-post">
+                    <div class="xlarge-50 large-50 medium-50 small-100 tiny-100 work-posts-list">
                         <article class="post-teaser">    
                             <a href="{{ BASE_PATH }}{{ post.url }}">
                                 <header class="post-title push-center">
-
-                                    {% if post.thumb%}
-
-                                    <img src="{{post.thumb}}" alt="{{post.thumb-alt-text}}" class="half-bottom-space"><span>{{ post.tags[0] }}</span>
-                                    {% endif %}
-
-                                    <p class="post-title bottom-space">{{ post.title }}</p>
-
+                                    <figure>
+                                        {% if post.thumb%}
+                                        <img src="{{post.thumb}}" alt="{{post.thumb-alt-text}}" class="half-bottom-space">
+                                        {% endif %}
+                                        <figcaption>
+                                            <h2 class="post-title bottom-space">{{ post.title }}</h2>
+                                        </figcaption>			
+                                    </figure>
                                 </header>
                             </a>
                         </article>
                     </div>
                     {% endfor %}
-
                 </div>
             </div>
-
-
-
         </div>
-
     </div>
 </section>

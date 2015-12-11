@@ -45,7 +45,7 @@
             padding: 10px 3px;
         }
     }
-    
+
     .icon{
         font-size: 0.75em;
     }
@@ -57,5 +57,22 @@ footer.article-navigation {
     background-color: initial;
     padding-top: 1.5em;
     padding-bottom: 0;
+
+    img{
+        opacity: 0.95;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: scale3d(1.05,1.05,1);
+        transform: scale3d(1.05,1.05,1);
+    }
+
+
+    a:hover, a:focus {
+        img{
+            opacity: 0.6;
+            -webkit-transform: scale3d(1,1,1);
+            transform: scale3d(1,1,1);
+        }
+    }
 }
 

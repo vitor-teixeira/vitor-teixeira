@@ -15,16 +15,11 @@ layout: default
                     </header>
 
                     <div class="blog-content">
-
-
-
                         <div class="column-group gutters">
                             <div class="xlarge-70 large-70 medium-100 small-100 tiny-100 push-center">
                                 <p class="intro align-center">{{page.description}}</p>
                             </div>
                         </div>
-
-
                         <div class="column-group gutters">
                             <div class="xlarge-40 large-40 medium-100 small-100 tiny-100">
 
@@ -43,13 +38,10 @@ layout: default
                                 </figure>
                                 {% endif %}
                             </div>
-
                         </div>
-
                     </div>
-
                     <footer class="article-navigation top-space">
-                       <h3 class="more-projects-title">Other projects</h3>
+                        <h3 class="more-projects-title">Other projects</h3>
                         <div class="push-center align-center">
                             <div class="column-group gutters">
                                 {% for post in site.categories['work'] limit: 4 %}
