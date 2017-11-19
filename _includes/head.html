@@ -3,26 +3,21 @@
     <meta name=viewport content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme-color" content="#01a68a">
-
     <title>{%if page.title %} {{ page.title }} | {% endif %} {{ site.title }}</title>
     <link rel="shortcut icon" href="{{ BASE_PATH }}/favicon.ico" type="image/x-icon">
-
     <!-- Android Icons -->
     <link rel="icon" sizes="192x192" href="{% asset_path android-icon-192x192.png %}">
     <link rel="icon" sizes="144x144" href="{% asset_path android-icon-144x144.png %}">
-
     <!-- iOS icons -->
     <link rel="apple-touch-icon" href="{% asset_path apple-icon.png %}">
     <link rel="apple-touch-icon" sizes="76x76" href="{% asset_path apple-icon-76x76.png %}">
     <link rel="apple-touch-icon" sizes="120x120" href="{% asset_path apple-icon-120x120.png %}">
     <link rel="apple-touch-icon" sizes="152x152" href="{% asset_path apple-icon-152x152.png %}">
-
     {% if page.description %}
     <meta name="description" content="{{ page.description }}">
     {% else %}
     <meta name="description" content="{{ site.description }}">
     {% endif %}
-
     <!-- Open Graph Tags  -->
     <meta content="{{ site.title }}" property="og:site_name">
     {% if page.title %}
@@ -65,9 +60,7 @@
     <meta content="{{ tag }}" property="article:tag">
     {% endfor %}
     {% endif %}
-
     <!-- Twitter cards  -->
-
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@{{ site.twitter_username }}">
     <meta name="twitter:creator" content="@{{ site.twitter_username }}">
@@ -89,17 +82,12 @@
     {% else %}
     <meta name="twitter:image:src" content="{{ site.url }}{% asset_path fbshare.jpg %}">
     {% endif %}
-
-
-
     <!-- load INK and custom CSS -->
     {% stylesheet vt-style %}
-
     <!-- load Ink's css for IE8 and below -->
     <!--[if lt IE 9 ]>
 <link rel="stylesheet" href="http://cdn.ink.sapo.pt/3.1.7/css/ink-ie.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
 <![endif]-->
-
     <!-- test browser flexbox support and load legacy grid if unsupported -->
     <script type="text/javascript" src="http://cdn.ink.sapo.pt/3.1.7/js/modernizr.js"></script>
     <script type="text/javascript">
@@ -108,7 +96,6 @@
             nope : 'http://cdn.ink.sapo.pt/3.1.7/css/ink-legacy.min.css'
         });
     </script>
-
     <!-- Hotjar Tracking Code for vteixeira.com -->
     <script>
         (function(f,b){
@@ -120,16 +107,13 @@
             b.getElementsByTagName("head")[0].appendChild(c); 
         })(window,document);
     </script>
-
     <!-- Google Analytics Tracking Code for vteixeira.com -->
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
                                 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
         ga('create', 'UA-63077552-1', 'auto');
         ga('send', 'pageview');
-
     </script>
 </head>

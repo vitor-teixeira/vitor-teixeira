@@ -4,21 +4,19 @@
     </div>
     <ul class="menu vertical">
         <li>
-            <a href="{% if page.url == '/index.html' %}#about{% else %} /#about {% endif %}" tabindex="-1" class="ink-smooth-scroll" data-margin="60.8" title="Who is Vítor Teixeira">About</a>
+            <a href="{% if page.path == 'index.html' %}#about{% else %} /#about {% endif %}" tabindex="-1" class="ink-smooth-scroll" data-margin="60.8" title="Who is Vítor Teixeira">About</a>
         </li>
         <li>
-            <a href="{% if page.url == '/index.html' %}#work{% else %} /work {% endif %}" class="ink-smooth-scroll" data-margin="60.8" title="Latest Projects">Work</a>
+            <a href="{% if page.path == 'index.html' %}#work{% else %} /work {% endif %}" class="ink-smooth-scroll" data-margin="60.8" title="Latest Projects">Work</a>
         </li>
         <li>
-            <a href="{% if page.url == '/index.html' %}#what-i-do{% else %} /#what-i-do {% endif %}" class="ink-smooth-scroll" data-margin="60.8" title="Preferred Methodologies for User Experience Design">Methods</a>
+            <a href="{% if page.path == 'index.html' %}#what-i-do{% else %} /#what-i-do {% endif %}" class="ink-smooth-scroll" data-margin="60.8" title="Preferred Methodologies for User Experience Design">Methods</a>
         </li>
-
         <li>
-            <a href="{% if page.url == '/index.html' %}#toolkit{% else %} /#toolkit {% endif %}" class="ink-smooth-scroll" data-margin="60.8" title="Tools and Languages">Tools</a>
+            <a href="{% if page.path == 'index.html' %}#toolkit{% else %} /#toolkit {% endif %}" class="ink-smooth-scroll" data-margin="60.8" title="Tools and Languages">Tools</a>
         </li>
-
         <li>                            
-            <a href="{% if page.url == '/index.html' %}#contact{% else %} /#contact {% endif %}" class="ink-smooth-scroll" data-margin="60.8" title="Get in touch with me">Contacts</a>
+            <a href="{% if page.path == 'index.html' %}#contact{% else %} /#contact {% endif %}" class="ink-smooth-scroll" data-margin="60.8" title="Get in touch with me">Contacts</a>
         </li>
     </ul>
 </nav>
