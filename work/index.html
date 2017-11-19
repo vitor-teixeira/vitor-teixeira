@@ -6,13 +6,13 @@ title: Work Posts archive
 <section class="work" aria-labelledby="workHeading">
     <div class="ink-grid">
         <h1 id="workHeading" class="align-center half-bottom-space">Some of my work</h1>
-        <p class="align-center bottom-space work-intro">A selection of publicly available projects I recently worked on</p>
+        <p class="align-center bottom-space work-intro">A selection of publicly available projects I worked on</p>
         <div class="column-group gutters push-center">
             <div class="xlarge-80 large-80 medium-100 small-100 tiny-100 push-center align-center">
                 <div class="column-group gutters">
                     {% for post in site.categories['work'] %}
                     <div class="xlarge-50 large-50 medium-50 small-100 tiny-100 work-posts-list">
-                        <article class="post-teaser">    
+                        <article class="post-teaser">
                             <a href="{{ BASE_PATH }}{{ post.url }}">
                                 <header class="post-title push-center">
                                     <figure>
@@ -21,7 +21,7 @@ title: Work Posts archive
                                         {% endif %}
                                         <figcaption>
                                             <h2 class="post-title bottom-space">{{ post.title }}</h2>
-                                        </figcaption>			
+                                        </figcaption>
                                     </figure>
                                 </header>
                             </a>
