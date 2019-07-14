@@ -1,4 +1,4 @@
-# Site settings 
+# Site settings
 title: User Experience Portfolio of Vítor Teixeira
 email: vsdteixeira@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
@@ -9,9 +9,9 @@ twitter_username: vsdteixeira
 github_username:  vitor-teixeira
 #permalink: /:categories/:year/:month/:title.html
 permalink: /:categories/:title.html
-gems:
+plugins:
  - jekyll-sitemap
-  
+
 # Build settings
 markdown: kramdown
 assets:

@@ -9,15 +9,15 @@
 
     @media only screen and (max-width: 45em) {
         height: 300px;
-        background-image: url(asset_path('header-bg.jpg'));
+        background-image: asset_url('header-bg.jpg');
         background-size: cover;
-        background-position: right bottom;    
+        background-position: right bottom;
     }
 
     @media only screen and (min-width: 45em) {
-        background-image: url(asset_path('header-bg-short.jpg'));
+        background-image: asset_url('header-bg-short.jpg');
         background-size: cover;
-        background-position: right bottom;    
+        background-position: right bottom;
     }
 
 
@@ -34,14 +34,14 @@
     p.icon{
         font-size: 6em;
         margin-bottom: 0.4em;
-       
+
         @media only screen and (max-width: 45em) {
             display: none;
         }
     }
 
     h1{
-        color: $dark-bg-text-color; 
+        color: $dark-bg-text-color;
         margin-bottom: 0.1em;
 
         @media only screen and (max-width: 45em) {
@@ -72,7 +72,7 @@
         text-decoration: none;
 
         &:hover,
-        &:focus {	
+        &:focus {
             background: $dark-bg-text-color;
             color: $brand-color;
             text-shadow: none;

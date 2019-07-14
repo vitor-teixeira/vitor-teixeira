@@ -6,13 +6,13 @@
     <title>{%if page.title %} {{ page.title }} | {% endif %} {{ site.title }}</title>
     <link rel="shortcut icon" href="{{ BASE_PATH }}/favicon.ico" type="image/x-icon">
     <!-- Android Icons -->
-    <link rel="icon" sizes="192x192" href="{% asset_path android-icon-192x192.png %}">
-    <link rel="icon" sizes="144x144" href="{% asset_path android-icon-144x144.png %}">
+    <link rel="icon" sizes="192x192" href="{% asset android-icon-192x192.png @path %}">
+    <link rel="icon" sizes="144x144" href="{% asset android-icon-144x144.png @path %}">
     <!-- iOS icons -->
-    <link rel="apple-touch-icon" href="{% asset_path apple-icon.png %}">
-    <link rel="apple-touch-icon" sizes="76x76" href="{% asset_path apple-icon-76x76.png %}">
-    <link rel="apple-touch-icon" sizes="120x120" href="{% asset_path apple-icon-120x120.png %}">
-    <link rel="apple-touch-icon" sizes="152x152" href="{% asset_path apple-icon-152x152.png %}">
+    <link rel="apple-touch-icon" href="{% asset apple-icon.png @path %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% asset apple-icon-76x76.png @path %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% asset apple-icon-120x120.png @path %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% asset apple-icon-152x152.png @path %}">
     {% if page.description %}
     <meta name="description" content="{{ page.description }}">
     {% else %}
@@ -45,9 +45,9 @@
     {% if page.thumb %}
     <meta content="{{ site.url }}{{ page.thumb }}" property="og:image">
     {% else %}
-    <meta content="{{ site.url }}{% asset_path fbshare.jpg %}" property="og:image">
-    <meta property="og:image:type" content="image/jpeg"> 
-    <meta property="og:image:width" content="1200"> 
+    <meta content="{{ site.url }}{% asset fbshare.jpg @path %}" property="og:image">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="650">
     {% endif %}
     {% if page.categories %}
@@ -80,10 +80,10 @@
     {% if page.thumb %}
     <meta name="twitter:image:src" content="{{ site.url }}{{ page.thumb }}">
     {% else %}
-    <meta name="twitter:image:src" content="{{ site.url }}{% asset_path fbshare.jpg %}">
+    <meta name="twitter:image:src" content="{{ site.url }}{% asset fbshare.jpg @path %}">
     {% endif %}
     <!-- load INK and custom CSS -->
-    {% stylesheet vt-style %}
+    {% asset vt-style %}
     <!-- load Ink's css for IE8 and below -->
     <!--[if lt IE 9 ]>
 <link rel="stylesheet" href="http://cdn.ink.sapo.pt/3.1.7/css/ink-ie.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
@@ -104,7 +104,7 @@
             f._hjSettings={hjid:12833, hjsv:4};
             c=b.createElement("script");c.async=1;
             c.src="//static.hotjar.com/c/hotjar-"+f._hjSettings.hjid+".js?sv="+f._hjSettings.hjsv;
-            b.getElementsByTagName("head")[0].appendChild(c); 
+            b.getElementsByTagName("head")[0].appendChild(c);
         })(window,document);
     </script>
     <!-- Google Analytics Tracking Code for vteixeira.com -->
