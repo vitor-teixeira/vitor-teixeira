@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>User Experience Portfolio of Vítor Teixeira</title>
-    <description>Virtual home of Vítor Teixeira&#39;s User Experience Portfolio. He&#39;s into User Research, Information Architecture, Responsive Web Design, and more.
+    <description>Virtual home of Vítor Teixeira's User Experience Portfolio. He's into User Research, Information Architecture, Responsive Web Design, and more.
 </description>
-    <link>http://vteixeira.com/</link>
-    <atom:link href="http://vteixeira.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 19 Nov 2017 19:17:12 +0000</pubDate>
-    <lastBuildDate>Sun, 19 Nov 2017 19:17:12 +0000</lastBuildDate>
-    <generator>Jekyll v3.1.1</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 14 Jul 2019 19:43:37 +0100</pubDate>
+    <lastBuildDate>Sun, 14 Jul 2019 19:43:37 +0100</lastBuildDate>
+    <generator>Jekyll v3.8.6</generator>
     
       <item>
         <title>Sky Store</title>
@@ -33,11 +33,40 @@ Furthermore, &lt;a href=&quot;https://store.sky.de/&quot;&gt;Sky Store Germany&l
 
 </description>
         <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
-        <link>http://vteixeira.com/work/sky-store.html</link>
-        <guid isPermaLink="true">http://vteixeira.com/work/sky-store.html</guid>
+        <link>http://localhost:4000/work/sky-store.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/sky-store.html</guid>
         
         
         <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>Sky Store</title>
+        <description>&lt;p&gt;Sky Store has been being developed in iterations in the past few years with attention to market trends as well as customers’ feedback. This approach allowed the store to successfully gain more and more traction in the movies and tv shows digital and physical market.&lt;/p&gt;
+
+&lt;p&gt;The latest Sky Store iteration introduces the option for users to purchase and watch stand-alone HD Digital copies and Blu-rays with the digital copy included, previously the user could only rent SD Digital copies and DVDs, also with the digital copy included. To get the best outcome after deciding on the new product iteration direction, prototypes were designed and tested in several occasions with both internal users as well as recruited participants before investing too much in development.
+Furthermore, &lt;a href=&quot;https://store.sky.de/&quot;&gt;Sky Store Germany&lt;/a&gt; has been recently launched, having the team successfully adapted the product not only to the different language, but also to the needs of users from a different country and culture.&lt;/p&gt;
+
+&lt;h2 id=&quot;main-responsabilities&quot;&gt;Main Responsabilities&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Communication of UX/UI vision and both business and users needs&lt;/li&gt;
+  &lt;li&gt;Monitoring development and participation in strategic decisions&lt;/li&gt;
+  &lt;li&gt;Prototyping&lt;/li&gt;
+  &lt;li&gt;User testing&lt;/li&gt;
+  &lt;li&gt;Heuristic evaluation&lt;/li&gt;
+  &lt;li&gt;Validation of iterations with increased functionality&lt;/li&gt;
+  &lt;li&gt;Research on product localisation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;the-result&quot;&gt;The result&lt;/h2&gt;
+&lt;p&gt;Check out &lt;a href=&quot;https://skystore.com&quot; target=&quot;_blank&quot;&gt;Sky Store&lt;/a&gt; &lt;i class=&quot;icon vticon-external-link&quot;&gt;&lt;/i&gt; and enjoy.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/sky-store.html</link>
+        <guid isPermaLink="true">http://localhost:4000/sky-store.html</guid>
+        
         
       </item>
     
@@ -62,8 +91,8 @@ Furthermore, &lt;a href=&quot;https://store.sky.de/&quot;&gt;Sky Store Germany&l
 
 </description>
         <pubDate>Wed, 02 Dec 2015 00:00:00 +0000</pubDate>
-        <link>http://vteixeira.com/work/sapo-mag.html</link>
-        <guid isPermaLink="true">http://vteixeira.com/work/sapo-mag.html</guid>
+        <link>http://localhost:4000/work/sapo-mag.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/sapo-mag.html</guid>
         
         
         <category>work</category>
@@ -92,8 +121,8 @@ Furthermore, &lt;a href=&quot;https://store.sky.de/&quot;&gt;Sky Store Germany&l
 
 </description>
         <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
-        <link>http://vteixeira.com/work/sapo-biz.html</link>
-        <guid isPermaLink="true">http://vteixeira.com/work/sapo-biz.html</guid>
+        <link>http://localhost:4000/work/sapo-biz.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/sapo-biz.html</guid>
         
         
         <category>work</category>
@@ -121,8 +150,8 @@ Furthermore, &lt;a href=&quot;https://store.sky.de/&quot;&gt;Sky Store Germany&l
 
 </description>
         <pubDate>Mon, 30 Nov 2015 00:00:00 +0000</pubDate>
-        <link>http://vteixeira.com/work/sapo-blogs.html</link>
-        <guid isPermaLink="true">http://vteixeira.com/work/sapo-blogs.html</guid>
+        <link>http://localhost:4000/work/sapo-blogs.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/sapo-blogs.html</guid>
         
         
         <category>work</category>
@@ -150,8 +179,8 @@ Furthermore, &lt;a href=&quot;https://store.sky.de/&quot;&gt;Sky Store Germany&l
 
 </description>
         <pubDate>Sun, 29 Nov 2015 00:00:00 +0000</pubDate>
-        <link>http://vteixeira.com/work/sapo-videos.html</link>
-        <guid isPermaLink="true">http://vteixeira.com/work/sapo-videos.html</guid>
+        <link>http://localhost:4000/work/sapo-videos.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/sapo-videos.html</guid>
         
         
         <category>work</category>
@@ -190,8 +219,8 @@ Furthermore, &lt;a href=&quot;https://store.sky.de/&quot;&gt;Sky Store Germany&l
 
 </description>
         <pubDate>Sat, 28 Nov 2015 00:00:00 +0000</pubDate>
-        <link>http://vteixeira.com/work/living-usability-lab.html</link>
-        <guid isPermaLink="true">http://vteixeira.com/work/living-usability-lab.html</guid>
+        <link>http://localhost:4000/work/living-usability-lab.html</link>
+        <guid isPermaLink="true">http://localhost:4000/work/living-usability-lab.html</guid>
         
         
         <category>work</category>

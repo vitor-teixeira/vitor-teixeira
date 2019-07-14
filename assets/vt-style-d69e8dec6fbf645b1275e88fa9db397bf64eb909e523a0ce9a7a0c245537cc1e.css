@@ -2407,12 +2407,12 @@ footer {
   @media only screen and (max-width: 45em) {
     .content-drawer section.welcome {
       height: 300px;
-      background-image: url("/assets/header-bg.jpg");
+      background-image: url(/assets/header-bg-f8f59c1aded8568284720c7256cb0f4e39d7e378cdcbc91240acf9510ed9c796.jpg);
       background-size: cover;
       background-position: right bottom; } }
   @media only screen and (min-width: 45em) {
     .content-drawer section.welcome {
-      background-image: url("/assets/header-bg-short.jpg");
+      background-image: url(/assets/header-bg-short-28df6cc08565749c06f6c7a4a38b2d94526c9532730a3a8488ac82149a4af5f8.jpg);
       background-size: cover;
       background-position: right bottom; } }
 
