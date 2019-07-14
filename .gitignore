@@ -1,6 +1,7 @@
 .DS_Store
 .sass-cache/
 .asset-cache/
+.cache
 *.swp
 *.swo
 /node_modules/
